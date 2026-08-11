@@ -2854,3 +2854,14 @@ FR-020の7対象を相互参照が切れない単位で復元し、現行状態�
   - L7: `evaluation`
   - L8: `design`
 - 実装: `.github/ISSUE_TEMPLATE/`へ参照形式を移植し、`scripts/sync-task-map-issues.mjs`で検証、作成、中断再開、二次同期を行う
+
+### Issue化実行結果
+
+- Planning snapshot: `ba0e1938ed85973fbc14eed4303ddf3d14c9347c`（push済み）
+- 実行結果: 新規Issue #3〜#226を224件作成し、既存Issue #2をL8として再利用した
+- 対応件数: Task-backed Issue 225件（L=8、M=42、S=175）
+- leaf種別内訳: `requirements` 96件、`evaluation` 26件、`design` 53件
+- 親子関係: 224辺（Task間217辺、Issue #1からL1〜L7へのroot辺7辺）
+- Gate Issue: 0件。GateはPlanning snapshot内のGate Registryを参照する
+- 検証結果: MarkerとTask IDは全単射、Issue #2とL8は一意、直接依存と親子関係はTask Mapに一致、再同期差分は0件
+- Issue番号対応表: `docs/task-issue-map.json`
