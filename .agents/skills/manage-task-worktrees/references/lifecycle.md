@@ -48,7 +48,7 @@ Gate依存があるTaskは`--gate-commit <sha>`を指定する。スクリプト
 rtk bash .agents/skills/manage-task-worktrees/scripts/manage_worktree.sh plan 28
 ```
 
-表示内容を確認後、外部アクセスとGUI起動の承認を得て開始する。
+表示内容を確認後、そのまま開始する。ユーザーが実装を依頼済みの場合、worktree作成やVS Code起動について追加承認を求めない。
 
 ```shell
 rtk bash .agents/skills/manage-task-worktrees/scripts/manage_worktree.sh start 28
@@ -125,6 +125,8 @@ rtk bash .agents/skills/manage-task-worktrees/scripts/manage_worktree.sh finish 
 - push先branchとPRの概要
 
 承認前は `git add`、`git commit`、`git push`、PR作成を行わない。「続けて」「対応して」「完了まで進めて」などの一般的な継続指示は承認に含めない。Commitだけが承認された場合は、pushやPR作成を行わない。Commit・push・PR作成をまとめて実行するには、三つすべてが承認対象として明示されている必要がある。
+
+Commitの承認後は、`git add`または`git commit`の前に`.agents/skills/commit/SKILL.md`を全文読み、Commit Skillを使う。PR作成の承認後は、PR作成前に`.agents/skills/pr/SKILL.md`を全文読み、PR Skillを使う。各Skillの利用は本ライフサイクルの明示承認Gateを代替しない。
 
 承認された操作だけを実行し、Commit・PR作成後はIssueへEvidenceを残す。
 
