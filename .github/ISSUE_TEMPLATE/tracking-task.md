@@ -10,18 +10,18 @@ assignees: ''
 タイトル形式: [Lx] タスク名 または [Lx-My] タスク名
 
 このIssueは直下の子Issueを束ねるtracking Issueです。
-親自身では子と重複する成果物を作りません。
-自動同期領域と人手記録領域を分離し、人手のEvidenceを再同期で上書きしません。
+親自身では子と重複する実装を行いません。
+自動作成時、子チェックリストは子Issueのopen／closedから同期し、
+統合Evidence等の手動記録はhuman-progress Marker内に保持します。
 -->
 
 ## タスク情報
 
 - Task ID:
 - 親Task ID:
-- 親Issue:
 - Planning snapshot commit SHA:
 - Task Map固定リンク:
-- 原典Issue:
+- 原典Issue: https://github.com/yukihito-jokyu/knowledge/issues/1
 
 ## 目的・主成果物
 

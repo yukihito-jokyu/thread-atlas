@@ -9,26 +9,31 @@ assignees: ''
 <!--
 タイトル形式: [Lx-My-Sz] タスク名
 
-タスク種別は requirements / design / implementation / evaluation を使用します。
-Issue本文から新しい依存、成果物、Path、設計判断を追加しません。
-Task Mapとの不一致を発見した場合は作業を止め、正本を再承認・更新してから同期します。
+このIssueは、承認済みTask Mapに存在するleafを実行するためのものです。
+Issue本文から新しい依存、成果物、Path、設計判断を追加しないでください。
+Task Map、決定記録、Gate記録との不一致を発見した場合は作業を止め、
+正本を再承認・更新してからこのIssueを同期してください。
+
+自動作成時は仕様部分をgenerated-content Markerで管理し、実施チェック、
+着手・検証Evidence、PRはhuman-progress Marker内へ分離します。
+再同期はhuman-progress内を変更しません。
 -->
 
 ## タスク情報
 
 - Task ID:
 - 親Task ID:
-- 親Issue:
 - タスク名:
-- タスク種別: <!-- requirements / design / implementation / evaluation -->
+- タスク種別: <!-- design / implementation / evaluation -->
 - Planning snapshot commit SHA:
-- Task Map固定リンク:
-- 原典Issue:
+- Task Map固定リンク: <!-- https://github.com/yukihito-jokyu/knowledge/blob/<SHA>/docs/task-map.md#... -->
+- 原典Issue: https://github.com/yukihito-jokyu/knowledge/issues/1
 - 関連する原典章:
 - 関連する決定ID:
 
 ## 目的
 
+<!-- このleafが完成させる単一の到達状態 -->
 
 ## 原典との差分
 
@@ -48,23 +53,26 @@ Task Mapとの不一致を発見した場合は作業を止め、正本を再承
 | --- | --- |
 | 主成果物 | |
 | 書込み可能なPath／Glob | |
-| 単一Owner | |
+| 単一Owner | <!-- 原則としてこのTask ID --> |
 | read-only入力 | |
 | 共有資産と単一Owner | |
 | Gate通過記録 | |
 
+書込み可能なのは、上表の所有Pathと承認済みの明示例外だけです。それ以外のPathは変更しません。
+
 ## 完了条件
 
 - [ ]
+- [ ]
 - [ ] 主成果物が指定Pathに存在する
 - [ ] 単一Ownerと書込みPathの境界を守っている
-- [ ] Task固有の検証結果またはReview EvidenceをIssueへ記録した
+- [ ] Task固有の検証結果またはReview evidenceをIssueへ記録した
 - [ ] 未解決の契約差異とTBDがない
 
 ## 対象外
 
-- Task Mapにない設計判断・依存・成果物の追加
-- 親・兄弟Taskが所有する成果物
+-
+-
 
 ## 依存関係
 
@@ -75,6 +83,14 @@ Task Mapとの不一致を発見した場合は作業を止め、正本を再承
 | Gateへの入力 | | |
 | Gate通過依存 | | |
 | Release条件 | | |
+
+- 後続接続の固定リンク: <!-- https://github.com/yukihito-jokyu/knowledge/blob/<SHA>/docs/task-connections.md#... -->
+
+<!--
+依存関係はPlanning snapshotのTask MapとGate記録から転記します。
+推移的依存、親roll-up、新しい依存判断を追加しません。
+後続接続は派生文書への参照に留め、Issue側で編集しません。
+-->
 
 ## 着手判定
 
@@ -111,7 +127,16 @@ Task Mapとの不一致を発見した場合は作業を止め、正本を再承
 | 静的確認 | | | |
 | Task固有テスト／Review | | | |
 | 契約・統合確認 | | | |
-| 後続評価 | | | |
+| 後続評価 | <!-- L6等への参照。ここでは重複実施しない --> | | |
+
+<!--
+該当しない項目は削除せず、次の形式で理由を記載します。
+該当なし（理由: ...）
+
+Task ID、目的、成果物、OwnerはIssue作成時から必須です。
+Gate待ちの本番Path、起点SHA、PR等は作成時のみTBDを許容しますが、
+Ready判定時にはTBDを残しません。
+-->
 
 ## 差異を発見した場合
 
