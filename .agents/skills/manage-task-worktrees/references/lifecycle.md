@@ -17,12 +17,16 @@
             └─ 作業中
                  ├─ open/status
                  └─ finish確認
-                      └─ Commit・push・PR・Merge
-                           └─ remove
-                                └─ worktree削除済み
+                      └─ 独立完了監査
+                           └─ 指摘解消・再検証
+                                └─ 独立再確認
+                                     └─ Commit承認Gate
+                                          └─ Commit・push・PR・Merge
+                                               └─ remove
+                                                    └─ worktree削除済み
 ```
 
-`plan`と`status`はread-onlyである。`start`はbranch、worktree、ローカル引継ぎファイルを作成し、既定ではVS Codeを開く。`finish`は完了判定材料を表示するだけでCommitやpushを行わない。`remove`はMerge済みでcleanなworktreeだけを削除する。
+`plan`と`status`はread-onlyである。`start`はbranch、worktree、ローカル引継ぎファイルを作成し、既定ではVS Codeを開く。`finish`は完了判定材料を表示するだけでCommitやpushを行わない。`finish`とIssue固有の検証後も、ユーザーが明示承認するまでCommit・push・PR作成を行わない。`remove`はMerge済みでcleanなworktreeだけを削除する。
 
 ## 基準ref
 
@@ -94,7 +98,35 @@ Path競合はスクリプトだけで完全判定しない。CodexがIssueの「
 rtk bash .agents/skills/manage-task-worktrees/scripts/manage_worktree.sh finish 28
 ```
 
-出力されたbranch、HEAD、変更Path、Owner PathをIssueと照合する。その後、Task固有テストを実行し、ユーザーの依頼範囲に従ってCommit、push、PRを行う。
+出力されたbranch、HEAD、変更Path、Owner PathをIssueと照合し、Task固有テストを実行する。その後、Commit承認Gateの前に独立完了監査を行う。
+
+## 独立完了監査
+
+作業主担当とは別の相互に独立した2名の読み取り専用サブエージェントへ、次の2系統を分けて依頼する。
+
+1. 原典と完了条件の監査
+   - Issue #1などの要求正本、親Issue、現Task Issue、固定Planning snapshotを実差分・検証結果と照合する。
+   - 原典との矛盾・過不足、Owner Path、現Issueの全終了条件を1項目ずつ「確認済み」または「指摘あり」とEvidence付きで記録する。
+2. 横断整合性の監査
+   - Task Map、依存Issue、兄弟・後続Issueを照合する。
+   - 責務境界、受渡しAnchor、依存DAG、Gate、将来Taskの先取り・重複・欠落を「確認済み」または「指摘あり」とEvidence付きで記録する。
+
+両監査で契約差異、終了条件のEvidence不足、Owner Path違反、未解決TBD、依存・Gate不成立、将来Issueとの重複または受渡し欠落が見つかった場合は、影響と対応案を記録する。監査役はファイルを編集せず、主担当の結論を前提にせず原典を自ら確認する。自己レビューのみで代替しない。
+
+主担当は監査指摘を整理し、必要な修正を反映してTask固有テストまたはReviewを再実行する。初回監査の2名とは別の読み取り専用サブエージェントへ全項目の再確認を依頼し、解消済み・未解決を根拠とともに記録する。必要なサブエージェントを利用できない場合は、実施できた確認範囲と制約をユーザーへ報告する。
+
+独立再確認を行った後、次をユーザーへ提示して明示承認を待つ。
+
+- 変更Pathと差分概要
+- Task固有テストまたはReviewの結果
+- 独立監査の各項目の判定、根拠、指摘解消履歴、再監査結果
+- 未解決事項の有無、影響、対応案
+- 予定するCommitメッセージ
+- push先branchとPRの概要
+
+承認前は `git add`、`git commit`、`git push`、PR作成を行わない。「続けて」「対応して」「完了まで進めて」などの一般的な継続指示は承認に含めない。Commitだけが承認された場合は、pushやPR作成を行わない。Commit・push・PR作成をまとめて実行するには、三つすべてが承認対象として明示されている必要がある。
+
+承認された操作だけを実行し、Commit・PR作成後はIssueへEvidenceを残す。
 
 Issueへ少なくとも次を記録する。
 
@@ -104,6 +136,7 @@ Issueへ少なくとも次を記録する。
 - PR
 - 統合Commit
 - Gate／Releaseに渡すEvidence
+- 独立完了監査結果と指摘解消・再監査Evidence
 - 未解決事項の有無
 
 ## 削除
@@ -127,4 +160,3 @@ rtk bash .agents/skills/manage-task-worktrees/scripts/manage_worktree.sh remove 
 - 基準refにCommitがない: integration順を修正し、refを更新する。
 - Pathが既に存在する: 登録済みworktreeとbranchを確認し、推測で削除しない。
 - `code`がない: `start --no-open`を使用し、利用可能なVS Code起動方法をユーザーと決める。
-
