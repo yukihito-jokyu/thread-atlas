@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yukihito-jokyu/thread-atlas/blob/main/docs/task-issue-map.schema.json",
+  "title": "Task Map to GitHub Issue sync manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "repo", "snapshot", "generatedAt", "tasks"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "repo": { "const": "yukihito-jokyu/thread-atlas" },
+    "snapshot": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "tasks": {
+      "type": "object",
+      "minProperties": 225,
+      "maxProperties": 225,
+      "patternProperties": {
+        "^L[1-8](?:-M[1-9][0-9]*)?(?:-S[1-9][0-9]*)?$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "level", "parentId", "taskType", "dependency", "sourceHash", "issueNumber", "generatedHash"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "level": { "enum": ["L", "M", "S"] },
+            "parentId": { "type": ["string", "null"] },
+            "taskType": { "enum": ["tracking", "requirements", "design", "implementation", "evaluation"] },
+            "dependency": { "type": "string" },
+            "sourceHash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+            "issueNumber": { "type": ["integer", "null"], "minimum": 1 },
+            "generatedHash": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
