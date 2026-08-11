@@ -1,0 +1,2258 @@
+{
+  "schemaVersion": 1,
+  "repo": "yukihito-jokyu/thread-atlas",
+  "snapshot": "ba0e1938ed85973fbc14eed4303ddf3d14c9347c",
+  "generatedAt": "2026-08-11T08:55:32.968Z",
+  "tasks": {
+    "L1": {
+      "name": "MVP利用シナリオと成果物生成機能の扱いを確定する",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "なし",
+      "sourceHash": "c9eca467b7bef835240a3c3d07ef2bb17d113b85016a1486aa5b749f2231118f",
+      "issueNumber": 3,
+      "generatedHash": "a482ea2d92badbc280fa1a05141e5ca8d20774e8a00e77d2b6107f094241cc58"
+    },
+    "L1-M1": {
+      "name": "壁打ちの開始・進行・認識修正・完了シナリオを定義する",
+      "level": "M",
+      "parentId": "L1",
+      "taskType": "tracking",
+      "dependency": "なし",
+      "sourceHash": "a9d69113bcba7cbf32ff4de6316be40eaeb65b3fd0b85cf1abb81fa053cb23e6",
+      "issueNumber": 10,
+      "generatedHash": "a06acc1026df9eaf5183f54c59d15b74f31ff658ff25037d76272a75095ebe30"
+    },
+    "L1-M1-S1": {
+      "name": "新規壁打ち開始シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M1",
+      "taskType": "requirements",
+      "dependency": "なし",
+      "sourceHash": "dabd4f9047a1236551a70cc8d6d071cd44ded003cf74347251eecdf13c3acdbf",
+      "issueNumber": 52,
+      "generatedHash": "cda885a4cf0bd2edef0bae0240ded48662bc481e7cc6fde91c861af1057ca07d"
+    },
+    "L1-M1-S2": {
+      "name": "一問一答による議論進行シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L1-M1-S1",
+      "sourceHash": "cd0468d08a86d3333c89fdd99e71b4c9f7c189d7a425ee691b3caebc9474b979",
+      "issueNumber": 53,
+      "generatedHash": "ee9d1e4e6a22006afc1716c13981af4c6a71f5d3799a05c80e4680228c59df53"
+    },
+    "L1-M1-S3": {
+      "name": "AI認識のユーザー修正シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L1-M1-S2",
+      "sourceHash": "addd94f9e30fb95fed8e54b78fa5ed5adc54d8e78a9a1483a72ba60a1f82ea04",
+      "issueNumber": 54,
+      "generatedHash": "794cd026861031432e816708856ccd91543f6747a4b180d6663afe3fb7ef772b"
+    },
+    "L1-M1-S4": {
+      "name": "論点の正常完了・親復帰シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L1-M1-S2",
+      "sourceHash": "d26589b330db3eb1cac68cd593efcb9a06e76cb5110a60a59a7ad47b7d7e2c0b",
+      "issueNumber": 55,
+      "generatedHash": "567c5f2ddbdb21b6409d816a3a628eb2e6e720d8f1c89826226cce933ddced46"
+    },
+    "L1-M2": {
+      "name": "新規提案の発見・ユーザー判断シナリオを定義する",
+      "level": "M",
+      "parentId": "L1",
+      "taskType": "tracking",
+      "dependency": "なし",
+      "sourceHash": "96c31b212d9897724ec2880816ef07edd015588b1494a6462d1c0aaa3a22720b",
+      "issueNumber": 11,
+      "generatedHash": "06bf6bf22816ae9c488603a13d047b9fc0fd3a6148d4262d1fe264c15059bda1"
+    },
+    "L1-M2-S1": {
+      "name": "AI新規提案の発見・スコープ識別シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M2",
+      "taskType": "requirements",
+      "dependency": "なし",
+      "sourceHash": "e8f9b45eb551df5ce6a01bafa32cd53822b7299f4bfa878b78a5796781febbd3",
+      "issueNumber": 56,
+      "generatedHash": "bfb74531f6ab4b97d195e8b6c2ee0853741c8fb1bb27fa77dec8c4298f1a5e6d"
+    },
+    "L1-M2-S2": {
+      "name": "新規提案への3判断と継続先シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M2",
+      "taskType": "requirements",
+      "dependency": "確定・Merge: L1-M2-S1",
+      "sourceHash": "1a7ea95fd6495dde027d499c8f72fcd24c90935a9796315df18407dc1b28452d",
+      "issueNumber": 57,
+      "generatedHash": "56c7442265322f1e58bcc3163673c0d4d08564017863c60ff65c853652954954"
+    },
+    "L1-M3": {
+      "name": "理解停止・背景再確認の利用場面と復帰分岐を定義する",
+      "level": "M",
+      "parentId": "L1",
+      "taskType": "tracking",
+      "dependency": "なし",
+      "sourceHash": "e12a6a596d10abfce5b051605b1643c89a1de18eb7b0d1925e2861bb560ab7a5",
+      "issueNumber": 12,
+      "generatedHash": "19d3c6b4f5ca3009477a8a68efb0982208c6e8632f7fb41a5a2bc80393b5def1"
+    },
+    "L1-M3-S1": {
+      "name": "理解停止の通知・次論点非進行シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M3",
+      "taskType": "requirements",
+      "dependency": "なし",
+      "sourceHash": "9fe66bb1f4fc9bf1762638cd9b47f72a02d56206f8548b960535a238a2330ae1",
+      "issueNumber": 58,
+      "generatedHash": "bdf85d2762d91e871c924157613d42d83c2e7f8240c16c3986491b418ef04c38"
+    },
+    "L1-M3-S2": {
+      "name": "背景再説明・理解未解消反復・通常進行復帰シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M3",
+      "taskType": "requirements",
+      "dependency": "確定・Merge: L1-M3-S1",
+      "sourceHash": "a89713f742248f9a9ba957d564fe44c88169d1216f60c282957234ec805c30f8",
+      "issueNumber": 59,
+      "generatedHash": "04bb263bc7073185128f77b26db8af8739c562abf7e7ffda963c2acf4e1273d1"
+    },
+    "L1-M4": {
+      "name": "議論の中断・経緯確認・再開シナリオを定義する",
+      "level": "M",
+      "parentId": "L1",
+      "taskType": "tracking",
+      "dependency": "なし",
+      "sourceHash": "fd8d8f7bb23c2966dffbdc9ca97c96da8e6e719b1c0de2a81bc1fe98050e6c30",
+      "issueNumber": 13,
+      "generatedHash": "8e2afce164ef37f14ee9cd95b11ffac5aa01c4acfcc0916b81c4ea4a54f40d3b"
+    },
+    "L1-M4-S1": {
+      "name": "下位議論の中断・親論点継続シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M4",
+      "taskType": "requirements",
+      "dependency": "なし",
+      "sourceHash": "e277eab8ee60be24df756a26633c1fa2136cae7f5ce789890474d62037bacab6",
+      "issueNumber": 60,
+      "generatedHash": "a8a36eb84fe02dc47bde6341d29388c4d0e5dc80523fbceea40df1754c4098bb"
+    },
+    "L1-M4-S2": {
+      "name": "中断論点の経緯確認・再訪シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M4",
+      "taskType": "requirements",
+      "dependency": "確定・Merge: L1-M4-S1",
+      "sourceHash": "7c2f7e1b51f1b6f7eae6c2ecc59ca84a3ee4603c4b7b91fb294153f0b9bd6562",
+      "issueNumber": 61,
+      "generatedHash": "f96479b26b85d655090d592c1a7de10d319f51ae28c420a56f8a4f8aa1d8cfde"
+    },
+    "L1-M4-S3": {
+      "name": "アプリ終了後のセッション復元・再開シナリオを作成する",
+      "level": "S",
+      "parentId": "L1-M4",
+      "taskType": "requirements",
+      "dependency": "なし",
+      "sourceHash": "c0b944cae0c6e9536f11891bd6a6e71e20882d4e3a44967e56d8c736f954a824",
+      "issueNumber": 62,
+      "generatedHash": "daffa8a31a4fc7b4453c2f52d9346cc3e49328343667e700c0a486c9d907e54a"
+    },
+    "L1-M5": {
+      "name": "L1シナリオ被覆と成果物生成機能のMVP／将来境界を確定する",
+      "level": "M",
+      "parentId": "L1",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L1-M1、L1-M2、L1-M3、L1-M4",
+      "sourceHash": "c733983fbd48d899c9f1d68dd49fe95130e5eec491833751da6507ead5240632",
+      "issueNumber": 14,
+      "generatedHash": "18bf6513f6ea51693284c6b098ae3cceed912cfe5d15348d228c83c0c9d51fbe"
+    },
+    "L1-M5-S1": {
+      "name": "L1シナリオ・FR・MVP被覆／Owner割当表を確定する",
+      "level": "S",
+      "parentId": "L1-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L1-M1、L1-M2、L1-M3、L1-M4",
+      "sourceHash": "18be629e147f67cfeac6d877a85315b53b74925980f9c7c3bdd85fe3596bdf68",
+      "issueNumber": 63,
+      "generatedHash": "a956887561d9ef23e4d86afb5adcd4dec6597418da87fac4169fae62ed7623a4"
+    },
+    "L1-M5-S2": {
+      "name": "成果物生成機能のMVP外・将来Issue境界を確定する",
+      "level": "S",
+      "parentId": "L1-M5",
+      "taskType": "requirements",
+      "dependency": "なし",
+      "sourceHash": "872495f936f64069a7e5b0e8e90a4f42625d8084215c27ad3ed3f4b0890af324",
+      "issueNumber": 64,
+      "generatedHash": "1cd88dffa2350b84c2edc782f6504ebea3e4b8bc4333fac23e6cf2f933b5f684"
+    },
+    "L2": {
+      "name": "論点ライフサイクルと終了・復帰規則を確定する",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "なし",
+      "sourceHash": "01c21d99db1913ef9d8209591e3e648c9fa26abdba647d31fa40b7c92df1049b",
+      "issueNumber": 4,
+      "generatedHash": "20070e06583e369187a854d3ceac1ec5d11396adef7c2ef681ff4c4bbb9bb6bf"
+    },
+    "L2-M1": {
+      "name": "論点状態語彙と状態軸の関係を確定する",
+      "level": "M",
+      "parentId": "L2",
+      "taskType": "tracking",
+      "dependency": "なし",
+      "sourceHash": "2a70ee2ffe0803ff3777b2c0aa47b7f427b8fe53aa5ea7b4893fa8fe7740e431",
+      "issueNumber": 15,
+      "generatedHash": "ccec7e5081fc92f537c2735cc22d22f4086f407f390a4825624e629a2580a70b"
+    },
+    "L2-M1-S1": {
+      "name": "§10の7状態語彙の意味・適用境界を定義する",
+      "level": "S",
+      "parentId": "L2-M1",
+      "taskType": "requirements",
+      "dependency": "なし",
+      "sourceHash": "f86fe349cd8868cc4d98512f8f0a6f23bc5963fd09f587dec73a525f77b970b7",
+      "issueNumber": 65,
+      "generatedHash": "55e2729bde9992a5d9dbfec7fc4f70d9f54b6a388e328fceff99a8b795db7a5f"
+    },
+    "L2-M1-S2": {
+      "name": "状態軸モデルと7状態語彙の配置を確定する",
+      "level": "S",
+      "parentId": "L2-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M1-S1",
+      "sourceHash": "ba3744c373533e736a374db9d592cbed99bc39d83c9c8736b0ccff79077475aa",
+      "issueNumber": 66,
+      "generatedHash": "efd5fd34f9b7766cbfd5671d7751f53347ef11a6a693afda4b8cbf416b60b262"
+    },
+    "L2-M1-S3": {
+      "name": "状態組合せ制約と決定済み／論点完了の関係を確定する",
+      "level": "S",
+      "parentId": "L2-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M1-S2",
+      "sourceHash": "5a2dd48f19eb41cb6f7a0dc2235f032767faad44b012b557e78de27488987a2b",
+      "issueNumber": 67,
+      "generatedHash": "edd5a1f90327f0b373b908e9014daf37d5d719b8173a474ba478e660917b7f96"
+    },
+    "L2-M2": {
+      "name": "完了条件の生成・変更・充足判定規則を確定する",
+      "level": "M",
+      "parentId": "L2",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L2-M1",
+      "sourceHash": "0779e405bad4b0b1112f5c1030e6f63e7b02fdbadea62cf74537e387af0bdf39",
+      "issueNumber": 16,
+      "generatedHash": "6eb661143c7ce0e7a5738f9ba07d9f5af3b509d17f3f88212faf32e0b7a1bc2d"
+    },
+    "L2-M2-S1": {
+      "name": "完了条件の意味上の入力・初期設定規則を確定する",
+      "level": "S",
+      "parentId": "L2-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M1",
+      "sourceHash": "77ce469eaea9cab33d5a857446fb9e0279d6aee119c5fd115468a2b2b5a65843",
+      "issueNumber": 68,
+      "generatedHash": "efbdbee2b653543c399d57ed6418df967f3006b682c9213937d58c04e053cfa6"
+    },
+    "L2-M2-S2": {
+      "name": "完了条件の変更・再判定規則を確定する",
+      "level": "S",
+      "parentId": "L2-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M2-S1",
+      "sourceHash": "c1afa4aeaf03c0195435f76a27caf250ae47780d8f61aff75bf75e0d1dc772cb",
+      "issueNumber": 69,
+      "generatedHash": "f1e02b73276f42b3530cd9ab59920ac8cabd28acfd113e06fc377162139c08a7"
+    },
+    "L2-M2-S3": {
+      "name": "完了条件の充足判定・正常完了可否規則を確定する",
+      "level": "S",
+      "parentId": "L2-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M2-S1",
+      "sourceHash": "b42cbe30caa61beed22e1df12bedc741f0f55d668e35892ad9b0d9d31b64f9ff",
+      "issueNumber": 70,
+      "generatedHash": "9f5f612371c3a820a026c2a843a62e50f18474a90516c930ac2e03a338219faf"
+    },
+    "L2-M3": {
+      "name": "完了・中断・再開時の階層／現在地不変条件を確定する",
+      "level": "M",
+      "parentId": "L2",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L2-M2",
+      "sourceHash": "1509eaa6be247679f1745d1053dc27ba46d1ccda39d2f0e3986de6cb6ea29b2f",
+      "issueNumber": 17,
+      "generatedHash": "91a3be6800558b1117af6bbb0075c3335f92bc6268f7109f484d283416bd5adf"
+    },
+    "L2-M3-S1": {
+      "name": "階層・現在地・復帰先の共通不変条件を確定する",
+      "level": "S",
+      "parentId": "L2-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M1",
+      "sourceHash": "7105971a3a9f37eb365a9f33ca7d211a9048811408f250aa1f78ab2a7c12f902",
+      "issueNumber": 71,
+      "generatedHash": "4d24f95e2e169bc4171002831de681e3b2445f203b92879a7c8f24c11e7b4f41"
+    },
+    "L2-M3-S2": {
+      "name": "正常完了・親復帰・ルート完了の階層不変条件を確定する",
+      "level": "S",
+      "parentId": "L2-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M2、L2-M3-S1",
+      "sourceHash": "9812c2580e2b25c8c3b4dd3b3c355077a15d2b4bf5bb5e958fa36779e87c2926",
+      "issueNumber": 72,
+      "generatedHash": "3503eb709956014b7e5764864410a13c25bc35c5ddaff16da6e45dbd9c59d664"
+    },
+    "L2-M3-S3": {
+      "name": "中断・再訪・復元後再開の階層不変条件を確定する",
+      "level": "S",
+      "parentId": "L2-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M3-S1",
+      "sourceHash": "36c0af71df4d10d2b1991d1c7e28d0fc83f98ac5622dd0d331629e7317a76216",
+      "issueNumber": 73,
+      "generatedHash": "23dd95ebdf9c800872b6f5b6dbbd84fbfd26ac7fd7607ff5a9b588f004032f0e"
+    },
+    "L2-M3-S4": {
+      "name": "保留・要確認・対象外・決定済みの再開と新規提案論点化時の階層不変条件を確定する",
+      "level": "S",
+      "parentId": "L2-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M3-S1",
+      "sourceHash": "3ac90f6281deb255ab218d52b1afee31c94d7d2bd00eea9c7dbb8381bfca39a8",
+      "issueNumber": 74,
+      "generatedHash": "18d42ef008c4f6b741341de3b9a54a393b5748afa60d068fc76772b7eeb26f53"
+    },
+    "L2-M4": {
+      "name": "許可・禁止状態遷移表を確定する",
+      "level": "M",
+      "parentId": "L2",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L2-M3",
+      "sourceHash": "eb5daf3105bf722738ee2f7d009c7daa186a04bb905fff3637999ccf1e69f6da",
+      "issueNumber": 18,
+      "generatedHash": "227c9a1e3f5833302bd624cfe96ae8f6a08f28fdecd4dcdfae94074017f35d54"
+    },
+    "L2-M4-S1": {
+      "name": "基本開始・決定更新・正常完了の許可遷移表を確定する",
+      "level": "S",
+      "parentId": "L2-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M1、L2-M2、L2-M3",
+      "sourceHash": "ee372c475187c6c0f30cb6192a363bdd3a2a2e0d92166742beebcb64d49c07e0",
+      "issueNumber": 75,
+      "generatedHash": "ccef15dadaae8d60870f57d4b6714d13d8a553a566412adb4d1a7205fb495d16"
+    },
+    "L2-M4-S2": {
+      "name": "保留・要確認の遷移と中断・再開経路を確定する",
+      "level": "S",
+      "parentId": "L2-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M1、L2-M2、L2-M3",
+      "sourceHash": "7bcae670252439bcfb6d7d65eeb701b149961212e7427e89b788a6ec85918ef0",
+      "issueNumber": 76,
+      "generatedHash": "26ac4d0ba34a3deb56cc0ea77bda3ebc5d0f8200cc008b1fdc857553013abe35"
+    },
+    "L2-M4-S3": {
+      "name": "対象外化・再対象化、決定済み再開、新規提案の登録・3判断遷移を確定する",
+      "level": "S",
+      "parentId": "L2-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M1、L2-M2、L2-M3",
+      "sourceHash": "fbd585cdcc5e87e013be876eda9ce479c7cc13355badaf4b607a1111d76a90dd",
+      "issueNumber": 77,
+      "generatedHash": "74f10459b3172c5d8a2d10167345ebb3490fe9ab77384db0549a696fbb22eef6"
+    },
+    "L2-M4-S4": {
+      "name": "横断Guard・禁止遷移表を確定する",
+      "level": "S",
+      "parentId": "L2-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2-M4-S1、L2-M4-S2、L2-M4-S3",
+      "sourceHash": "3d23e8a78f13d32f560d7e06f1c61e7d058dedf5b4848ad6ebdbdddc4fcb9dbe",
+      "issueNumber": 78,
+      "generatedHash": "9e69a058390365747792ef05e607e2ef8d5d533e5b11b85d416f498648f94854"
+    },
+    "L3": {
+      "name": "AI更新権限・提案承認・理解停止時の統制を確定する",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L2",
+      "sourceHash": "a79a310c6a82a0f7de54fed9d576580d9009baf55485f580cc4cfdfb46de1956",
+      "issueNumber": 5,
+      "generatedHash": "6e515416962bcf31fead1d793cfe086342c1225b849262034d2b472ceea7933e"
+    },
+    "L3-M1": {
+      "name": "Actor別の更新権限とAI自動更新範囲を確定する",
+      "level": "M",
+      "parentId": "L3",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L2",
+      "sourceHash": "a692c1391b70301bbb2d1cf966de8fa9988bf8839ce07d340e68b4b6aa1658a3",
+      "issueNumber": 19,
+      "generatedHash": "9322e60079107484120ab70b1a3cad276aaf2b674727e67570f4b53f07d9f029"
+    },
+    "L3-M1-S1": {
+      "name": "Actor語彙・権限区分・主表記載規則を確定する",
+      "level": "S",
+      "parentId": "L3-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L2",
+      "sourceHash": "ef2312c6a5387ee46a09d4c6cb3729578f40f331bc0c2c1424178c82fdb9515c",
+      "issueNumber": 79,
+      "generatedHash": "163361b2c954eb8a433d7608477b3e81c5cc000471de8fa0e6045484f34cb6b8"
+    },
+    "L3-M1-S2": {
+      "name": "議論開始・通常構造更新・完了条件・決定更新・正常完了系のActor権限を確定する",
+      "level": "S",
+      "parentId": "L3-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M1-S1",
+      "sourceHash": "d888161f5de5a8eda291e38e2be1f946235f8b4d21a29bd42ab21d9456372f89",
+      "issueNumber": 80,
+      "generatedHash": "0d32e89e3a90683709ea002f778fdb3fdacb50908e171b1a94822d703cfd6e1e"
+    },
+    "L3-M1-S3": {
+      "name": "保留・中断・再開・対象外化／再対象化・決定済み再開系のActor権限を確定する",
+      "level": "S",
+      "parentId": "L3-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M1-S1",
+      "sourceHash": "79ee47d3fa776d378ebdf547771b428a729e580d6dafc4954585718aaefecacc",
+      "issueNumber": 81,
+      "generatedHash": "1d7a7722e25d995b71df3dbca56dcc4e6a8595a588101b915b0a74beaa701adc"
+    },
+    "L3-M1-S4": {
+      "name": "例外系操作・Guardの基準権限区分と兄弟Owner参照を確定する",
+      "level": "S",
+      "parentId": "L3-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M1-S1",
+      "sourceHash": "1f8b95aad113283ea62a692c27e9170bd6d18752ddae70e1b84bef62adc58251",
+      "issueNumber": 82,
+      "generatedHash": "3ce8b706866c3ef29e9b70a279e9f182ee128d43c6a0a45f8c56ca1067feeb3f"
+    },
+    "L3-M2": {
+      "name": "AI新規提案の登録・ユーザー判断・論点化承認規則を確定する",
+      "level": "M",
+      "parentId": "L3",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L3-M1",
+      "sourceHash": "07e90d8935ae1659d55f6e31320263fb24b123ea7735ac361eb92d6a05319248",
+      "issueNumber": 20,
+      "generatedHash": "d51be94f4f521832f242e39cdfecd27d278cfe2d32e3df4bfa1faf7dc554cc9b"
+    },
+    "L3-M2-S1": {
+      "name": "AI未承認提案の登録権限と通常更新との境界を確定する",
+      "level": "S",
+      "parentId": "L3-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M1",
+      "sourceHash": "1d2be2298410870c9d6969a988a3b24ed0a5bc658bd47f267fd20b47a460692a",
+      "issueNumber": 83,
+      "generatedHash": "05199e8d97fceebf46c0d5efb4059d41a92ec3a28215b8616bcaea9fc572d47d"
+    },
+    "L3-M2-S2": {
+      "name": "3判断の主体・承認範囲と「今議論する」の論点化承認規則を確定する",
+      "level": "S",
+      "parentId": "L3-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M2-S1",
+      "sourceHash": "2a8d25c00e111870b87b243fd6d67014e9b451ae34c5f51d9be4d2e9ff289eb4",
+      "issueNumber": 84,
+      "generatedHash": "9380f2f50bd13612659985e919dde885646f43a175940a4bed04fb0937e5b46c"
+    },
+    "L3-M2-S3": {
+      "name": "提案判断の再判断・撤回権限と暗黙変更禁止を確定する",
+      "level": "S",
+      "parentId": "L3-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M2-S2",
+      "sourceHash": "e7b889a946061f518b21647f28376f86ccdab6d634b9f2c120fffb5522fa5456",
+      "issueNumber": 85,
+      "generatedHash": "146e3cd38ee900ff412ec4edccd42f28138e751932c8b9a561e1fc2c233d48cc"
+    },
+    "L3-M3": {
+      "name": "理解停止Guardの成立・維持・解除とAI統制を確定する",
+      "level": "M",
+      "parentId": "L3",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L3-M1",
+      "sourceHash": "34659702f650a769c7d82ef11b901f7a12890ad3aa34615983c7d3ff100ed739",
+      "issueNumber": 21,
+      "generatedHash": "6240a97655fb17af43270c9a248f36835bd54de0dd9dd940c665daac5cd72d54"
+    },
+    "L3-M3-S1": {
+      "name": "理解停止Guardの成立条件と対象文脈を確定する",
+      "level": "S",
+      "parentId": "L3-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M1",
+      "sourceHash": "ac98456007308bced959bfc6d5a23cde55c9876a9647c5b6fb8eff2142b56dd0",
+      "issueNumber": 86,
+      "generatedHash": "c6a164907e93edea05b84951519974c9b2c625f351682021ff8f12734e0bcf14"
+    },
+    "L3-M3-S2": {
+      "name": "理解未解消中のGuard維持とAI許可・禁止動作を確定する",
+      "level": "S",
+      "parentId": "L3-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M3-S1",
+      "sourceHash": "5bee2b29e9289054c8024235a32b82294dbdf75dd537c34ec002bc94978c0bcd",
+      "issueNumber": 87,
+      "generatedHash": "d6ab752eae3836391dddce00d773e0764eef10f19dbb9b1e4c039d4e5f965319"
+    },
+    "L3-M3-S3": {
+      "name": "ユーザー明示によるGuard解除と通常進行復帰規則を確定する",
+      "level": "S",
+      "parentId": "L3-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M3-S2",
+      "sourceHash": "b58ec02dcc7d8903aa14909e520837983c320d13e802d49b171bdb2302e6b31d",
+      "issueNumber": 88,
+      "generatedHash": "59237f0fa1d9d7858fdc298749fc31ff1f0d194ac9220dc1e174b6089cc0343c"
+    },
+    "L3-M4": {
+      "name": "曖昧発言の要確認化とユーザー修正・優先規則を確定する",
+      "level": "M",
+      "parentId": "L3",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L3-M1",
+      "sourceHash": "793d5c0e6e995b92350135eb1378e3a58e3daded2946faec04f67b213c6ee382",
+      "issueNumber": 22,
+      "generatedHash": "3c7e4d33e9efa71f44f55fb8902e40b2b860c5936076244f4c726ae28ed59d4c"
+    },
+    "L3-M4-S1": {
+      "name": "曖昧発言時の確定更新保留・確認要求・明確化条件を確定する",
+      "level": "S",
+      "parentId": "L3-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M1",
+      "sourceHash": "98b89fd89dfd24dbac08b1f20df20d3b3b11486da4ce35f74f5b025490683007",
+      "issueNumber": 89,
+      "generatedHash": "d86f0c6709053bfd1444649b16114d2ab40f9199b01262de3bba998cb2431524"
+    },
+    "L3-M4-S2": {
+      "name": "ユーザー明示訂正の優先・適用境界を確定する",
+      "level": "S",
+      "parentId": "L3-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L3-M4-S1",
+      "sourceHash": "41b87cce701fa7df4fd9e5858756f84801e9dfc1f1fc694ba69964b9546e737e",
+      "issueNumber": 90,
+      "generatedHash": "0419f2073382343208cb91ef046f1e23ac96bab2e4ca56d429bec0627e335c25"
+    },
+    "L4": {
+      "name": "会話・議論状態・変更履歴・復元の論理モデルとUndo粒度を確定する",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "完了・Merge: 議論ライフサイクル整合Gate",
+      "sourceHash": "5a03eac8b49bdf70f9e6e7b4fcad5279191da1be099a4a82d6f028d4a3b96002",
+      "issueNumber": 6,
+      "generatedHash": "4ce4060199becd2daece9e61c47ceb7b383bf4740d0b2a5059543df2a795f366"
+    },
+    "L4-M1": {
+      "name": "会話・セッション・論点階層の概念Entityと関係を確定する",
+      "level": "M",
+      "parentId": "L4",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: 議論ライフサイクル整合Gate",
+      "sourceHash": "f5b8db824f8e4c67b58b2ec4d362204bd03f7dcbb7eb1b5ae2b7d2597c6a1153",
+      "issueNumber": 23,
+      "generatedHash": "ddbb580fe3f538547b3c012b4ca66e03147f9a93f5fab2e5e8444b50fcb224fa"
+    },
+    "L4-M1-S1": {
+      "name": "Session・発言／ターン・論点の概念Entityと論理識別を確定する",
+      "level": "S",
+      "parentId": "L4-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: 議論ライフサイクル整合Gate",
+      "sourceHash": "fda837d3519fc6dbc778915a6f955be212a95765ca320c081e5aa82f6defdcfd",
+      "issueNumber": 91,
+      "generatedHash": "aa1676f4e569411a3f2ea57d4369865123c01ab6d54a37a573d81cd695c1ace8"
+    },
+    "L4-M1-S2": {
+      "name": "会話時系列・Session所属・会話／論点関連のCardinalityを確定する",
+      "level": "S",
+      "parentId": "L4-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M1-S1",
+      "sourceHash": "8695e209c2b4cc305aff0619c37a7b2c57a88927292537e90a4dbcd9fa622083",
+      "issueNumber": 92,
+      "generatedHash": "9a8eafb76642d5e88931eabb272c08bb68562f396ffd0c99ea49fccf20a9aa08"
+    },
+    "L4-M1-S3": {
+      "name": "論点階層・派生関係と議論マップのEntity／Projection境界を確定する",
+      "level": "S",
+      "parentId": "L4-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M1-S1",
+      "sourceHash": "2309af6306f74d76801708fde0f9cc5a2b2f69e8a0ea5ce96292e0adbfd4592f",
+      "issueNumber": 93,
+      "generatedHash": "7380afb3982163469666407ffcc26aca0468de2bded092b6fd78a66a56f3a958"
+    },
+    "L4-M2": {
+      "name": "論点の文脈・進行情報・判断結果・現在地の論理関係を確定する",
+      "level": "M",
+      "parentId": "L4",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4-M1",
+      "sourceHash": "cc7edb374f3ab901d8e08b31e76071b25c027f7a9edea143ddf8de934cfdd256",
+      "issueNumber": 24,
+      "generatedHash": "cb22e651d5eb8fd7fc96d0adf129364e9053cbd04046612f87be75f8321226d8"
+    },
+    "L4-M2-S1": {
+      "name": "論点文脈・完了条件・未確認事項の論理関係を確定する",
+      "level": "S",
+      "parentId": "L4-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M1",
+      "sourceHash": "a34c389f05ccec2baef8a75bbf33d04e3f1a4befcd1a10648d8a49b67752a59e",
+      "issueNumber": 94,
+      "generatedHash": "759f084bfa4f4018b1a5bf0582adc005c75ec89d6971fa7f197d2af3f75a2a7a"
+    },
+    "L4-M2-S2": {
+      "name": "状態割当・現在地・復帰先の論理関係を確定する",
+      "level": "S",
+      "parentId": "L4-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M1",
+      "sourceHash": "f156a87e7baca5b18ad2d51f7e6bf7b2a6900982fcf5c2bffb44515c41066a8c",
+      "issueNumber": 95,
+      "generatedHash": "8ec09e2eacbc60fb73b299e5f528aa65130f185dfff96a42df8226a08a2b43b3"
+    },
+    "L4-M2-S3": {
+      "name": "決定・保留・対象外の判断結果の論理関係を確定する",
+      "level": "S",
+      "parentId": "L4-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M2-S1、L4-M2-S2",
+      "sourceHash": "acd64ad7bf848d3bc807d0e820b2ec809064a4b5c7454de9ce3960a6701a1aed",
+      "issueNumber": 96,
+      "generatedHash": "7955d90f8c71365e6d38fc3d55e137f9631abf226e112770f7782a0e6761c337"
+    },
+    "L4-M2-S4": {
+      "name": "未承認提案・ユーザー判断・論点化後由来の論理関係を確定する",
+      "level": "S",
+      "parentId": "L4-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M2-S3",
+      "sourceHash": "41700bca34aeb916a79520491ec46bb2f678cadab6f5af87536c3e399690f567",
+      "issueNumber": 97,
+      "generatedHash": "5cae31b31ddd67ed19813cf68c71b5581516d3b8ed8ab5121c1b732d93732ec2"
+    },
+    "L4-M3": {
+      "name": "論理変更Event・ChangeSetと議論由来追跡を確定する",
+      "level": "M",
+      "parentId": "L4",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4-M2",
+      "sourceHash": "f117471f6e0f7cde4d30e19d567f1febdde1a085cd6c7b11a5ec34e7940c28ee",
+      "issueNumber": 25,
+      "generatedHash": "265b6f17dc186e8e7ee08c34d50436484d57998815977b3e299f8dd57d85cdb6"
+    },
+    "L4-M3-S1": {
+      "name": "論理変更Eventの構成要素と対象粒度を確定する",
+      "level": "S",
+      "parentId": "L4-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M2",
+      "sourceHash": "7e342cce9ebb9777a078e3c55c263877ec1b998182fae096f8ad4b38971ea4eb",
+      "issueNumber": 98,
+      "generatedHash": "8ce301b07b837eab15975ec76342323f6c424bc05825fef41f6f762558a9c9cd"
+    },
+    "L4-M3-S2": {
+      "name": "複数変更のChangeSet境界と順序・因果関係を確定する",
+      "level": "S",
+      "parentId": "L4-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M3-S1",
+      "sourceHash": "7daf6508e929ab21293c752d8670f54c39f066a731cbaaab2d0a479ad06dce21",
+      "issueNumber": 99,
+      "generatedHash": "a0ea60329751b7dc8af7f9ff874c569c4e13617117d5b36657f6a7dbd173e51d"
+    },
+    "L4-M3-S3": {
+      "name": "訂正・再判断・業務上の取消の履歴関係と旧内容保持を確定する",
+      "level": "S",
+      "parentId": "L4-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M3-S2",
+      "sourceHash": "ea374337356164aa78951c22f255e8995eabc799a7f5e22eaefed52734b7071c",
+      "issueNumber": 100,
+      "generatedHash": "1309dd4aa0329c208bd96ff61d797b7d92daf61a76eadb46ff198ed57c72b32c"
+    },
+    "L4-M3-S4": {
+      "name": "現行論点・判断結果と根拠会話の双方向由来追跡を確定する",
+      "level": "S",
+      "parentId": "L4-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M3-S3",
+      "sourceHash": "e46a58973ef4c185b4fa6378f38d011ebba0bd2442ab0bd5dad574fc130d4bbf",
+      "issueNumber": 101,
+      "generatedHash": "6179e46535d7bfa8859d6708fabc700f92b95dce2457ea3aab98d397a7d6c6ad"
+    },
+    "L4-M4": {
+      "name": "Undo対象・原子粒度・適用後整合条件を確定する",
+      "level": "M",
+      "parentId": "L4",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4-M3",
+      "sourceHash": "a5e9e7652a6df9f4a351ab45e951d68e80cdffc777970d29615754b4c5d8de52",
+      "issueNumber": 26,
+      "generatedHash": "9b2373ebc4d9311227f86ff0406cfe7874e1f73c330caa0c9adf513999718f2b"
+    },
+    "L4-M4-S1": {
+      "name": "Undo可能対象・不可対象と非Undo変更を分類する",
+      "level": "S",
+      "parentId": "L4-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M3",
+      "sourceHash": "31ffdfbd84c75831c18c65ef7c3f0cf290b15d567428f9b8fa0ff13cdd1c8e98",
+      "issueNumber": 102,
+      "generatedHash": "7df43bc3022237cc2dee35e67c5618c3ea7c6971ef648fd8ca820e06207d1885"
+    },
+    "L4-M4-S2": {
+      "name": "Undo対象ChangeSetとUndo計画の論理原子性・部分適用禁止を確定する",
+      "level": "S",
+      "parentId": "L4-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M4-S1",
+      "sourceHash": "7af3005522aea2873625780a699f35a6d8db08f76d215904ee3b583ee34f1a22",
+      "issueNumber": 103,
+      "generatedHash": "bde4cb816a44d5822ccf4b02a60205454508eddb7f190b6a382803c163fcb165"
+    },
+    "L4-M4-S3": {
+      "name": "後続依存変更がある場合の拒否・連動Undo規則を確定する",
+      "level": "S",
+      "parentId": "L4-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M4-S2",
+      "sourceHash": "6ef58852f5685c2abea98fa4496a817bc5dcd56fd9b9798a84d9e38855e98884",
+      "issueNumber": 104,
+      "generatedHash": "1d958c58d9f8fefcb6b459a2b38f2b94deb2dae8333ac1a0a313133747afe956"
+    },
+    "L4-M4-S4": {
+      "name": "Undo適用後のライフサイクル整合・履歴非削除条件を確定する",
+      "level": "S",
+      "parentId": "L4-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M4-S3",
+      "sourceHash": "adce118a76dacf25d7324af117952fd6e47001bad68f11f4d03334a188e761a6",
+      "issueNumber": 105,
+      "generatedHash": "5adb1f338adc9269595f9a99a529bb0b5d6af45f344cadb3b818bab1011235a6"
+    },
+    "L4-M5": {
+      "name": "セッション復元対象・復元単位・再開整合条件を確定する",
+      "level": "M",
+      "parentId": "L4",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4-M3",
+      "sourceHash": "fd6f0408aafcabd7f5da6ed59b9735e949fb71b8ded79b994d6932908396f831",
+      "issueNumber": 27,
+      "generatedHash": "f0f762a91eebe68dd1886e4185fc6ca5b1d219ffbe46288ccba905f81f5b76c0"
+    },
+    "L4-M5-S1": {
+      "name": "FR-020の7復元対象とEntity／Projection対応を確定する",
+      "level": "S",
+      "parentId": "L4-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M3",
+      "sourceHash": "578b32a347da419cb29baaa8068604d0a64003094f7755694bd6ad39d63c2985",
+      "issueNumber": 106,
+      "generatedHash": "38c18b3c0d2d460cb761a52d0a9b56db73ef7558c9ae287ccec638b1e507e1ec"
+    },
+    "L4-M5-S2": {
+      "name": "Session単位の復元範囲と参照閉包を確定する",
+      "level": "S",
+      "parentId": "L4-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M5-S1",
+      "sourceHash": "51189d2a0ffbc9ae0d15c760ccb41aa62a3bd9e83e851852aa38278d733abeed",
+      "issueNumber": 107,
+      "generatedHash": "975e26350c5be3ac6bbf48e31818f64340150a125eaec08a43aa7fa5adf7710e"
+    },
+    "L4-M5-S3": {
+      "name": "復元時の現行正本と履歴・由来・Undo参照の整合条件を確定する",
+      "level": "S",
+      "parentId": "L4-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M5-S2",
+      "sourceHash": "3fe2e9a63ddbca77adbc69a0132bfb95839a9a390e9250cfc2a5e284a1421de3",
+      "issueNumber": 108,
+      "generatedHash": "be32768800cdf028f2d9c844dbfdc77fd3f4b47428639ea7133d7c9329350696"
+    },
+    "L4-M5-S4": {
+      "name": "復元後のライフサイクル整合・未完了議論再開条件を確定する",
+      "level": "S",
+      "parentId": "L4-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4-M5-S3",
+      "sourceHash": "0e334a224d3585696e8cb2265b81e057238c6e682f2397c05fdcb66269e4cf1a",
+      "issueNumber": 109,
+      "generatedHash": "630741a3b0e6d2138ff14fcd6ffb169f4e9a1a62df40c0e956b2aa1111ee6d35"
+    },
+    "L5": {
+      "name": "議論マップと全体／フォーカス表示の情報提示要件を確定する",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "a76066cb5cd0139511ed95968f177d2ce131032b6ae320c72a00cae7be7a195e",
+      "issueNumber": 7,
+      "generatedHash": "1ecc1f13682bba5926abc028e5962a5133c3f05f542439696da78a9560506add"
+    },
+    "L5-M1": {
+      "name": "議論マップの階層・状態・現在地・残り論点の識別要件を確定する",
+      "level": "M",
+      "parentId": "L5",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "26304f8dcac4184445cd80d3b045f7d7a68a325934b1b9c971c86340fbf8b87f",
+      "issueNumber": 28,
+      "generatedHash": "8e047626ff953c52f8ff944141eeb13e849867079f3c360152e491ee6c2b07ac"
+    },
+    "L5-M1-S1": {
+      "name": "親子階層・ルート経路・現在地の識別条件を確定する",
+      "level": "S",
+      "parentId": "L5-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "0b0486bac63c7db0f53704d423b2d6819f053eeac94f02cf083eaf32a9df42c8",
+      "issueNumber": 110,
+      "generatedHash": "cd89a5c0d7ee6d1b9a8e98cee80cf133e1870c7c2b143f90390b12c0b7bbfd53"
+    },
+    "L5-M1-S2": {
+      "name": "状態軸組合せ・論点完了の識別と提示優先順位を確定する",
+      "level": "S",
+      "parentId": "L5-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "a8f189b0d1bc7717e3b83ab0fee64b15c6a556ab25d2ed29f663fd0894588991",
+      "issueNumber": 111,
+      "generatedHash": "1aacd2ef325176c38e58c4ba0f5e44b17f71f2480dfe3a857f276980c3746824"
+    },
+    "L5-M1-S3": {
+      "name": "既知の残り論点・残り程度・構造上の要確認範囲の識別要件を確定する",
+      "level": "S",
+      "parentId": "L5-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M1-S1、L5-M1-S2",
+      "sourceHash": "ef056f1927c47c031aed639ac19d8170142e6d6c9a1cb9ccdef611e0d9a6900c",
+      "issueNumber": 112,
+      "generatedHash": "cd2e0a8ea48bf138831d076f2696772ecdfa6f5c1bdf26280aaca04133691dcf"
+    },
+    "L5-M2": {
+      "name": "現在論点の背景・目的・仮説・完了条件・復帰先の提示要件を確定する",
+      "level": "M",
+      "parentId": "L5",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "f131e327699f35a9e5f6a4c8181c06e898a83ce2b219388ebe3c528b5c798ed2",
+      "issueNumber": 29,
+      "generatedHash": "d2dc8e9a0294bc4bf1abaa4634fe6a59a6c835d6ebb25d818cf01f3c8e39bf95"
+    },
+    "L5-M2-S1": {
+      "name": "背景・派生元・上位目的・議論理由の文脈提示要件を確定する",
+      "level": "S",
+      "parentId": "L5-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "e5530b6e998dd224f863b7c0c9b7e900f11e6c34fbf7421d45303ee172aca6da",
+      "issueNumber": 113,
+      "generatedHash": "718466cb3fe85434162ba8aaf65fdda49da65c1c59a8de34e05b06adbbc8ff41"
+    },
+    "L5-M2-S2": {
+      "name": "決めたいこと・現在目的・検討中仮説・未決定性の識別要件を確定する",
+      "level": "S",
+      "parentId": "L5-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "c1569d9ab29b8add5b819d2e6e898f1e398d28c4e33e5ff6d5d1a04e258f680b",
+      "issueNumber": 114,
+      "generatedHash": "6effcb40e5970e0274e0fec7299512a4ae57179e72fa5e8420355bb70c28b15c"
+    },
+    "L5-M2-S3": {
+      "name": "完了条件・充足状況・現在論点内未確認事項・復帰先の提示要件を確定する",
+      "level": "S",
+      "parentId": "L5-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "b0f4329b8b210d539673ce7a3471d2a3cce51af476961552f318a1de72451ea1",
+      "issueNumber": 115,
+      "generatedHash": "48a216ed32f9f01e2a480be7dc130dcfe05f798739904a855ea08907d77b3588"
+    },
+    "L5-M3": {
+      "name": "決定・新規提案・スコープ変化の識別要件を確定する",
+      "level": "M",
+      "parentId": "L5",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "7db16ff64cd9c3c8dcf049ae16215e31ebd3138a1d96a6abb79dd36193df077e",
+      "issueNumber": 30,
+      "generatedHash": "b20afd3d1809008842b7b77046fcda53fca8cdf61f4d3a6a7e830d5b9245c528"
+    },
+    "L5-M3-S1": {
+      "name": "決定・決定済み状態・通常論点・仮説・未承認提案の種別識別要件を確定する",
+      "level": "S",
+      "parentId": "L5-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "02b4cf209ef78e9ec38c5348c6cc7bd3abb2121d68d1c96753b68c6afe8c6585",
+      "issueNumber": 116,
+      "generatedHash": "27965cce8b888bcd887bb043c2c5e06082c3c5a28bf5c89cddeff56172f034e1"
+    },
+    "L5-M3-S2": {
+      "name": "新規提案の理由・由来・目的関連・現在扱う必要性・発見／入力主体の提示要件を確定する",
+      "level": "S",
+      "parentId": "L5-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "18918bb5a4827222e7703e0266ca59cc3ff2d1e019c3d939b342ca62225a0ded",
+      "issueNumber": 117,
+      "generatedHash": "c15d53f98a51cb08352737a1da1a6e2e70c5ae52b26e4c3cd2ece6e004b14cfd"
+    },
+    "L5-M3-S3": {
+      "name": "新規提案の3判断結果と論点化後由来の識別要件を確定する",
+      "level": "S",
+      "parentId": "L5-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M3-S1、L5-M3-S2",
+      "sourceHash": "06b76094c1d556301c682571682497dea30fe0f3d10e47ff341b8f8634610d2e",
+      "issueNumber": 118,
+      "generatedHash": "c563e3e61702944e33e223b95b7679926c05dbd023f69dfe71cc4212967249f7"
+    },
+    "L5-M3-S4": {
+      "name": "現在スコープ・未承認候補・承認済み追加スコープ・新規追加由来の識別要件を確定する",
+      "level": "S",
+      "parentId": "L5-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M3-S3",
+      "sourceHash": "9baeb67c43d10b6c61a6cd0819e6428f9941af123cdad6a1648489804cc8957d",
+      "issueNumber": 119,
+      "generatedHash": "e70fd4d372d0a490e73bc3e65421d889c93d434eefdac5d30e48a9db841f9bc2"
+    },
+    "L5-M4": {
+      "name": "変更履歴・会話由来・修正／Undo結果の提示要件を確定する",
+      "level": "M",
+      "parentId": "L5",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "361447c1f6685ae75caac582b320007a1986391a16a4071cd52ea626bf5e847c",
+      "issueNumber": 31,
+      "generatedHash": "4a3173db282833fe091d813aee6b9c1dfc82a1c5826a3d4106cdb26d7d9cf5ae"
+    },
+    "L5-M4-S1": {
+      "name": "履歴項目の種別・対象・主体・変更内容・発生順序の提示要件を確定する",
+      "level": "S",
+      "parentId": "L5-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "40dc699689350cada0e344fb9dd07b1e911b4d72048e239294564b8f661dc11d",
+      "issueNumber": 120,
+      "generatedHash": "f092308deeddcdc7823aebcccf6639f0890c22e8132da2e6cbc7d976062cc9b7"
+    },
+    "L5-M4-S2": {
+      "name": "訂正・再判断・業務取消・Undoの関係と現行／旧結果の提示要件を確定する",
+      "level": "S",
+      "parentId": "L5-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M4-S1",
+      "sourceHash": "916d21819a163e1a1881121e680b8fe1d2ab4757b25cf118af4318bb13d566e0",
+      "issueNumber": 121,
+      "generatedHash": "4d17615ff2a2b59d2f370888cda035f259128655b63cf55739bbc834588a4144"
+    },
+    "L5-M4-S3": {
+      "name": "論点・決定・提案・現行／旧結果から根拠会話への由来提示要件を確定する",
+      "level": "S",
+      "parentId": "L5-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "fad1a6c9dac0cf0f7d7e51246399f56a3fbe15193d9b08592869b19e5249955e",
+      "issueNumber": 122,
+      "generatedHash": "5eb72b56fd1059b6aa31bbec661b66f535e8d4d09db2f2237a764a6abbfd1d66"
+    },
+    "L5-M5": {
+      "name": "議論マップ表現方式と全体／フォーカスの情報配分・文脈連続性要件を確定する",
+      "level": "M",
+      "parentId": "L5",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L5-M1、L5-M2、L5-M3、L5-M4",
+      "sourceHash": "323ccdd0f8c5482b22526142f46bd9c41b26373d27c3d84dcf076efca0615441",
+      "issueNumber": 32,
+      "generatedHash": "a26fdc3b4340a41c5fe516ae587ca62d2a0917f3b8aad838d34b7143d6b10aa1"
+    },
+    "L5-M5-S1": {
+      "name": "議論マップ表現方式の適用条件とMVP複数図法非必須境界を確定する",
+      "level": "S",
+      "parentId": "L5-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M1、L5-M2、L5-M3、L5-M4",
+      "sourceHash": "23725eaf16012b28ab138c9da46f21d8f5c49fdfd4d7335f3c0aa0a29e318ac5",
+      "issueNumber": 123,
+      "generatedHash": "44f19e34962ad17502def62433d7488b14dcb023a5c3871f1291a1a654c18c38"
+    },
+    "L5-M5-S2": {
+      "name": "全体／フォーカス別の必須情報と省略可能範囲を確定する",
+      "level": "S",
+      "parentId": "L5-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M1、L5-M2、L5-M3、L5-M4",
+      "sourceHash": "85375f7d4253ed21ce2f0f57cc6e1b75589ae5583e867500993f18a82b9d1595",
+      "issueNumber": 124,
+      "generatedHash": "7cac9885c9ac324ae657a0400529fbf8717ec50a6715483c1679813afedbf8a4"
+    },
+    "L5-M5-S3": {
+      "name": "論理的現在地・表示フォーカス・選択対象・会話参照の対応要件を確定する",
+      "level": "S",
+      "parentId": "L5-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M1、L5-M2、L5-M3、L5-M4",
+      "sourceHash": "80f19469596d8f609c82e216371a65a83111b16d5952dead3f8a924858422b4b",
+      "issueNumber": 125,
+      "generatedHash": "bea7fa55691ee6611f5c19737b3444ee7b0a3cc752ec37b6cbc60bdd0848e388"
+    },
+    "L5-M5-S4": {
+      "name": "表現方式・全体／フォーカス切替前後の文脈連続性要件を確定する",
+      "level": "S",
+      "parentId": "L5-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L5-M5-S1、L5-M5-S2、L5-M5-S3",
+      "sourceHash": "51fb35d0f40330b5ec719acd9ff42eb28c460eeaf5a5bce256d24c0cdba07f98",
+      "issueNumber": 126,
+      "generatedHash": "63e50fa3d0cabf98ed884251dcce946d3166942c70823561f9a71db125b52cc3"
+    },
+    "L6": {
+      "name": "AIエージェント連携能力と詳細設計への受渡し境界を確定する",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4、L5情報提示整合Gate",
+      "sourceHash": "766dc48d6e0f93d672939bc052dff203cba9f01c9318e1840c835b953971cab1",
+      "issueNumber": 8,
+      "generatedHash": "7927953860970490dc60646cda50b515f814eac44f37c98266e53eda1fa5c4bd"
+    },
+    "L6-M1": {
+      "name": "AI・UI・Discussion Toolの論理責務と情報流境界を確定する",
+      "level": "M",
+      "parentId": "L6",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "4f2af5d328b11f389359c79ad04494a839453e16885686cbea915be6185b89b3",
+      "issueNumber": 33,
+      "generatedHash": "5e973634e5e8c8c7140f6cf25510cd782a66269903c80dbff92f54b611c77007"
+    },
+    "L6-M1-S1": {
+      "name": "論理処理ロールとAI・UI・Discussion Toolの責務割当を確定する",
+      "level": "S",
+      "parentId": "L6-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L4",
+      "sourceHash": "0fcdee30486b0bc3e8c35ed25562d71eca68647e0dde7d503be9dce5b7bbd797",
+      "issueNumber": 127,
+      "generatedHash": "27d5e0b920ca83a51ad883dbdf80db3b3a310db100d50df3ace4456221aad866"
+    },
+    "L6-M1-S2": {
+      "name": "利用者入力・AI会話生成・議論状態参照の会話／読取情報流を確定する",
+      "level": "S",
+      "parentId": "L6-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1-S1",
+      "sourceHash": "f919701604c71f144423876b227c48f065ad170191275ba7d12b1734e5e01c2a",
+      "issueNumber": 128,
+      "generatedHash": "5fca2b25265bafe3304602f799e2a0cc0829d021f5843908726aa2bed670b607"
+    },
+    "L6-M1-S3": {
+      "name": "変更要求・規則検証・正本更新・結果通知の更新情報流を確定する",
+      "level": "S",
+      "parentId": "L6-M1",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1-S1",
+      "sourceHash": "7eff749646068819b99b120903ea05f10277706570df92a0b260fd079271105a",
+      "issueNumber": 129,
+      "generatedHash": "7ddde52e2b16a76401fa64aa8e9be9ef45de7f19bb59fcef52ce7fe605c0ef94"
+    },
+    "L6-M2": {
+      "name": "議論ライフサイクルを操作する論理能力契約を確定する",
+      "level": "M",
+      "parentId": "L6",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L6-M1",
+      "sourceHash": "79044e88d71207419b4f0c896d81e82442023ff998a5df903735f7522c1eda13",
+      "issueNumber": 34,
+      "generatedHash": "1c6280b7f710a60812e63de0e6470c705f77e7532d0302b82004e8cbbdd3e4ec"
+    },
+    "L6-M2-S1": {
+      "name": "Session初期化・構造／現在地・文脈／完了条件のCapabilityを確定する",
+      "level": "S",
+      "parentId": "L6-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1",
+      "sourceHash": "05af489310645807558cdc9bda72aeb95da9afde0399c12f2cd03a0355c58a9d",
+      "issueNumber": 130,
+      "generatedHash": "7fb1f2f3baa243a9a556f6201e324e33e1f1d64f24eb153fc6e88cbdae9c07d0"
+    },
+    "L6-M2-S2": {
+      "name": "状態・判断結果・提案登録／3判断・再活性化のCapabilityを確定する",
+      "level": "S",
+      "parentId": "L6-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1",
+      "sourceHash": "832504510f50de4a56bd9fbdd81cc2280906833f47c1febc41f3ca3502285218",
+      "issueNumber": 131,
+      "generatedHash": "438129b8fafb76e4fc63bd34fde031f63891969c730057d0000581fb71cec290"
+    },
+    "L6-M2-S3": {
+      "name": "正常完了・親復帰・中断／再訪・理解停止／解除・復元後再開のCapabilityを確定する",
+      "level": "S",
+      "parentId": "L6-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1",
+      "sourceHash": "5365354f16b9e83960862d2718531fa7593d6b3fd8b35ffa9a08c5a706559436",
+      "issueNumber": 132,
+      "generatedHash": "247e24077f78ddc582ad8d8b76de620b6a618eee14116c7d5a9214dba5705bfa"
+    },
+    "L6-M2-S4": {
+      "name": "訂正・再判断・業務取消・Undoと複合操作原子性のCapabilityを確定する",
+      "level": "S",
+      "parentId": "L6-M2",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M2-S1、L6-M2-S2、L6-M2-S3",
+      "sourceHash": "762080080c1da2bc3173bf0438bdfd9bf03b18d13ce5e4e23a0ada031080384e",
+      "issueNumber": 133,
+      "generatedHash": "2bbc1a5ff87e4fcb2a01d10bb2e173447f7e91b643d1ae6fe86f2eee836ffe18"
+    },
+    "L6-M3": {
+      "name": "文脈・構造・履歴・根拠の照会／再説明能力を確定する",
+      "level": "M",
+      "parentId": "L6",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L6-M1、L5情報提示整合Gate",
+      "sourceHash": "ead109fbc0fe40fb7770308be129d9e8a2e7873fda527c41b03efd0ed56beef4",
+      "issueNumber": 35,
+      "generatedHash": "00863a8bed66044e02ed15f9ba9da47eca657f4566af9bea702e28e3080ced7d"
+    },
+    "L6-M3-S1": {
+      "name": "現在論点の文脈・進行情報照会と背景再説明能力を確定する",
+      "level": "S",
+      "parentId": "L6-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1、L5情報提示整合Gate",
+      "sourceHash": "870c4bd72bfbd6b14658f60223ee0920a2e88820a8b4ace4b8c80bab0e1e459e",
+      "issueNumber": 134,
+      "generatedHash": "4b18502d619b3ff76d069c751187b689ef44085679a29dc5a71a575c40a32abf"
+    },
+    "L6-M3-S2": {
+      "name": "議論構造・状態・判断結果・提案／スコープ・残り論点の照会能力を確定する",
+      "level": "S",
+      "parentId": "L6-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1、L5情報提示整合Gate",
+      "sourceHash": "95e8d6f6c1b9a22b463f96c10484e9de50dec5a20a92c17fa6e561a3c2dd3dc0",
+      "issueNumber": 135,
+      "generatedHash": "0c8543e83c7c4b7943b19f90001438317c078ce48483a0f7fa84386251741219"
+    },
+    "L6-M3-S3": {
+      "name": "変更履歴・現行／旧結果・根拠会話の照会能力を確定する",
+      "level": "S",
+      "parentId": "L6-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1、L5情報提示整合Gate",
+      "sourceHash": "1d594e3271e572bf249d110999ae0b97035de955ec369a020f8de4b93afebd71",
+      "issueNumber": 136,
+      "generatedHash": "c779433ab8b32b08936ed753db8da60d24393af4f89752f575fc80fdb5e5c03f"
+    },
+    "L6-M3-S4": {
+      "name": "全体／フォーカス・表現方式・選択対象・会話参照の表示コンテキスト能力を確定する",
+      "level": "S",
+      "parentId": "L6-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M3-S1、L6-M3-S2、L6-M3-S3",
+      "sourceHash": "7704f06939406a2b45c4fc8c94749204cd89302f2723978971bd3cb52a69aae1",
+      "issueNumber": 137,
+      "generatedHash": "cef7ed461252cc7585ce9c27bd7fee441161f9f07f46666be04376b7749c77ad"
+    },
+    "L6-M3-S5": {
+      "name": "照会結果の対象不存在・情報欠落・該当なし・権限不足・部分取得・利用不能を区分する",
+      "level": "S",
+      "parentId": "L6-M3",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M3-S1、L6-M3-S2、L6-M3-S3、L6-M3-S4",
+      "sourceHash": "ed8cdbedabe1d6734e5b457dea20c825039061fc6f4e35ef0d7d323c4798453f",
+      "issueNumber": 138,
+      "generatedHash": "8cdf3eb70d3593aee1fef598d2884d009e80b78680a60ebafe5c3440aea4b7c4"
+    },
+    "L6-M4": {
+      "name": "会話・論理操作・表示の同期および失敗・競合・重複時の整合要件を確定する",
+      "level": "M",
+      "parentId": "L6",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L6-M1、L6-M2、L6-M3",
+      "sourceHash": "25ca16780884d97b5eb35e06654352ad23d35a41c22ae9038e22641abc51211c",
+      "issueNumber": 36,
+      "generatedHash": "38af0060060b3f86c6a000bda955663911b3894794409084c4227d9654d46ee6"
+    },
+    "L6-M4-S1": {
+      "name": "正常時の会話・要求・正本更新／照会・応答・表示同期点を確定する",
+      "level": "S",
+      "parentId": "L6-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M1、L6-M2、L6-M3",
+      "sourceHash": "776947b5cd1fd9a69693f500ba24c05b89f26b345e44e0bbfe78a1e1fc890cc9",
+      "issueNumber": 139,
+      "generatedHash": "0e600deab94d32c09e1b331ce99a31b9a8098160b0b37dc759a3aeb44a7194ac"
+    },
+    "L6-M4-S2": {
+      "name": "規則拒否・処理失敗・コンポーネント間部分到達時の正本／通知整合を確定する",
+      "level": "S",
+      "parentId": "L6-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M4-S1",
+      "sourceHash": "1305257012ca1931741ba8cfd9bef3cd818ab2e31b253b3211bdfe275ec9ee53",
+      "issueNumber": 140,
+      "generatedHash": "fcbfab995e170f94b4ea44a5709a53dcfb1e77a37eaf20abb09dd386bd63a615"
+    },
+    "L6-M4-S3": {
+      "name": "競合・古い参照の暗黙上書き防止と再取得／再判定／再確認要件を確定する",
+      "level": "S",
+      "parentId": "L6-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M4-S1",
+      "sourceHash": "ae6a537f47d00a9a04da7790ef8c9477e907c37e19514a60ba1edad57c5a8091",
+      "issueNumber": 141,
+      "generatedHash": "ccf60ed04c9ffcf967194b4e76618571b5a5833c0453180a3814cbe2c065fafc"
+    },
+    "L6-M4-S4": {
+      "name": "再試行・重複要求の冪等な観測結果を確定する",
+      "level": "S",
+      "parentId": "L6-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M4-S2、L6-M4-S3",
+      "sourceHash": "d042c84ec7a03410f48c07f7b57555e9df89eb11ba6ce3a4c624458d2dc05957",
+      "issueNumber": 142,
+      "generatedHash": "35701f91d874cbad50d913d000e7657dcc5f2c6523b67bd61d1a38c80d875411"
+    },
+    "L6-M4-S5": {
+      "name": "途絶・復元異常後の正本確認とAI参照文脈／表示の再同期要件を確定する",
+      "level": "S",
+      "parentId": "L6-M4",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M4-S4",
+      "sourceHash": "c543060143c55017e044650c5f21d2640ca7620e36567d36aa8e695bf1ff638d",
+      "issueNumber": 143,
+      "generatedHash": "86a2dfa3b3d0cec7fd2294a700ee8f58595ac8df902de9037d3995f1422216db"
+    },
+    "L6-M5": {
+      "name": "Codex初期接続プロファイルと他AI適合条件・L8受渡し境界を確定する",
+      "level": "M",
+      "parentId": "L6",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L6-M4",
+      "sourceHash": "c01e01c427577b11a36427ecacb2605445ab17224ab70b94f4432741e8e1bd0b",
+      "issueNumber": 37,
+      "generatedHash": "179060eeb479af0617c09562b2bb5ec62a7f133ba97f539f0b5fe30434d19fb5"
+    },
+    "L6-M5-S1": {
+      "name": "AI非依存の必須・任意・条件付きCapability基準を確定する",
+      "level": "S",
+      "parentId": "L6-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M4同期・失敗整合Gate",
+      "sourceHash": "e84cd8e6ade95e5d372745d0646557d2e30ea8192cc5f27916ea12aa3595089e",
+      "issueNumber": 144,
+      "generatedHash": "d66a8347921ff95f94cca8c4ba38bf5080fb52abdd6d9271844f70075e04dec9"
+    },
+    "L6-M5-S2": {
+      "name": "Codex初期接続で満たす論理プロファイルと制約・前提を確定する",
+      "level": "S",
+      "parentId": "L6-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M5-S1",
+      "sourceHash": "04a3d50532904a85fb3903d7490d87d89e2784efaa4888cdb9c4637e9d79dcd4",
+      "issueNumber": 145,
+      "generatedHash": "9a934f8b6496596fe95117393094a32cba87f6844ebfdc01b56474ee64c697b8"
+    },
+    "L6-M5-S3": {
+      "name": "他AIのTool Calling相当適合条件と暗黙劣化禁止規則を確定する",
+      "level": "S",
+      "parentId": "L6-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M5-S1",
+      "sourceHash": "fc206e3edaed20b006c87d8f87fd2eee3b082dfec2fe73f4b01c53d36e7085d3",
+      "issueNumber": 146,
+      "generatedHash": "3a5b9d7631a4c2c73f535e6afdd0aaf1bebd4dbd37897e3b18eca05a37879214"
+    },
+    "L6-M5-S4": {
+      "name": "L6要件成果物と未決定設計項目のL8受渡し表を確定する",
+      "level": "S",
+      "parentId": "L6-M5",
+      "taskType": "requirements",
+      "dependency": "完了・Merge: L6-M5-S2、L6-M5-S3",
+      "sourceHash": "d8296eac9487e7b1ca8d55cd89d969e1ae0be6edd1390e6a5bdf5cf45a3966cd",
+      "issueNumber": 147,
+      "generatedHash": "234b84b81f1b4318fdf4d7a72b9eb6d5d7d5e5304737bbad408f0953898e7857"
+    },
+    "L7": {
+      "name": "非機能要件と受入基準を測定可能にする",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L1、L2、L3、L4、L5、L6",
+      "sourceHash": "f24d53fd13b232c4c97ac36c2deab5f75c4ea71398d7410a86c17dcf3ca9af9d",
+      "issueNumber": 9,
+      "generatedHash": "e9be2dc08efcc247fee44810493ebe6508a3efc5eebf341c2640f35da163381e"
+    },
+    "L7-M1": {
+      "name": "操作負荷・可読性のユーザビリティ受入基準を確定する",
+      "level": "M",
+      "parentId": "L7",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L1シナリオ被覆Gate、L5情報提示整合Gate、L6連携能力整合Gate",
+      "sourceHash": "4f9bdf50fb1f40a984a3e43ed30dad705a58a5f26f355ea06f326ddc32986217",
+      "issueNumber": 38,
+      "generatedHash": "9f6ec7e60538bdf00efea9bfee21250c9b75ba1a8f6dc3e4739757c1fbc4f192"
+    },
+    "L7-M1-S1": {
+      "name": "代表利用者・評価タスク・情報規模・正答Oracleを確定する",
+      "level": "S",
+      "parentId": "L7-M1",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L1シナリオ被覆Gate、L5情報提示整合Gate、L6連携能力整合Gate",
+      "sourceHash": "f75ce5e0e86fe27c82b93acc90a061970a876a1d6085e39ba5d8380199b381d0",
+      "issueNumber": 148,
+      "generatedHash": "77c461762bfbddea82387cb2601a569c31a323429450446ef8a1b6671df44f81"
+    },
+    "L7-M1-S2": {
+      "name": "操作負荷・再入力・構造維持負担の指標と閾値を確定する",
+      "level": "S",
+      "parentId": "L7-M1",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M1-S1",
+      "sourceHash": "884ea58c948b5a4443e8bbfa44e77fab6da33622ff935129c367c2555484fc92",
+      "issueNumber": 149,
+      "generatedHash": "8eac03515ec1fa37f1a34a9e59e4e334817d82b4b1993d9031467ea6cb18cfd5"
+    },
+    "L7-M1-S3": {
+      "name": "Q1〜Q8・重要情報認識・文脈連続性の指標と閾値を確定する",
+      "level": "S",
+      "parentId": "L7-M1",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M1-S1",
+      "sourceHash": "9c30f023a293dbbbe601db0a26437f985ca6a64ab002153c6fdd71c539d87350",
+      "issueNumber": 150,
+      "generatedHash": "72a1b0d874736ac8d634bcd4cef4c66d5012dea668ba477d1c7bf2febd945b28"
+    },
+    "L7-M1-S4": {
+      "name": "ユーザビリティ受入の実施手順・証跡・合否集約規則を確定する",
+      "level": "S",
+      "parentId": "L7-M1",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M1-S2、L7-M1-S3",
+      "sourceHash": "91f0f495f0ca717e355da1942bc2b03c3f69c599a0044caa71c922ce83d8041f",
+      "issueNumber": 151,
+      "generatedHash": "f6556b6cf6e59434399dee9388b5dad5a055c1c324b9136c6a590edc28bb1d35"
+    },
+    "L7-M2": {
+      "name": "応答性と同期完了の性能受入基準を確定する",
+      "level": "M",
+      "parentId": "L7",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L6-M4同期・失敗整合Gate",
+      "sourceHash": "49708079fe07a306a2bda7d770aeaf5ceddbaecd81c3c81f10dd7eea7ab74237",
+      "issueNumber": 39,
+      "generatedHash": "e6433d120f2dc9c81ef71553467403ef6c7dae29cc1e82dcb3f98678f87aca0f"
+    },
+    "L7-M2-S1": {
+      "name": "応答性の観測点・測定区間・待ち時間分解を確定する",
+      "level": "S",
+      "parentId": "L7-M2",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L6-M4同期・失敗整合Gate",
+      "sourceHash": "61dadc543b760c0e35c5cded52660eacc31b791f554632f379f0a44774fad28b",
+      "issueNumber": 152,
+      "generatedHash": "39b9015928cc7a99b3b084a2e127f620d42c0664f7744a7b6e3a6745ac68e3ec"
+    },
+    "L7-M2-S2": {
+      "name": "規模・負荷・状態・測定環境プロファイルを確定する",
+      "level": "S",
+      "parentId": "L7-M2",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L6-M4同期・失敗整合Gate",
+      "sourceHash": "225faf9891ca9a0af7a76ea8b279db090d0310d66a5e7537f0114fa97c2b4448",
+      "issueNumber": 153,
+      "generatedHash": "72e87b44c3555bdb8565ecbd8e8359ef801822be09564e1e29637c1bdd8963f5"
+    },
+    "L7-M2-S3": {
+      "name": "結果区分別の性能指標・標本・合格閾値を確定する",
+      "level": "S",
+      "parentId": "L7-M2",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M2-S1、L7-M2-S2",
+      "sourceHash": "0a6dcec302276343b6470e4590b724c77a7bacdaaea3da203b7e547b89b3fc26",
+      "issueNumber": 154,
+      "generatedHash": "8f1ebf66350bac4646d547bc00ae5879ca85e430e9d6f0e0bd0364e65dc11035"
+    },
+    "L7-M2-S4": {
+      "name": "性能受入の実施・証跡・集約・実施状態規則を確定する",
+      "level": "S",
+      "parentId": "L7-M2",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M2-S3",
+      "sourceHash": "90b387e9d814ae2078398c6ef731a26168278f627132244d7fb82aec7861fe45",
+      "issueNumber": 155,
+      "generatedHash": "83a3f7824602b316dbae90bbc2c7935f5daa4827205e83cbfd16c0e4d08177d7"
+    },
+    "L7-M3": {
+      "name": "可逆性・履歴整合の受入基準を確定する",
+      "level": "M",
+      "parentId": "L7",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L4-M4 Undo整合Gate、L5-M4、L6-M2、L6-M3、L6-M4",
+      "sourceHash": "bb2f5b9afd945b7bbbc2aaaa3d8840d082c6147eb9ecda912ba4702d98b93264",
+      "issueNumber": 40,
+      "generatedHash": "623cc56473a98800cb2ad369d8155a822fa19274076f8b8b2f793cac28340ad6"
+    },
+    "L7-M3-S1": {
+      "name": "Undo分類・ChangeSet種別・依存パターン別の受入データを確定する",
+      "level": "S",
+      "parentId": "L7-M3",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L4-M4 Undo整合Gate",
+      "sourceHash": "9b4b8da786b6e6b6815b758ed8556349b865dcf34c27a5e7f1e4c089b891fce6",
+      "issueNumber": 156,
+      "generatedHash": "a883a275527e5da7b1d4309b8903381cbf6721f19f082d1e43a1fd84a770e4df"
+    },
+    "L7-M3-S2": {
+      "name": "Undo適用・拒否後の正本／原子性／ライフサイクル整合の合格条件を確定する",
+      "level": "S",
+      "parentId": "L7-M3",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M3-S1、L6-M2、L6-M4",
+      "sourceHash": "7dad2a2b134a90728920eab50021852631010ef47beac32d2e83c7de24e34cd6",
+      "issueNumber": 157,
+      "generatedHash": "6769eb0bde56465e8a59ffd98cf0c661c7be14f3cf1385e7b10be20a689c39da"
+    },
+    "L7-M3-S3": {
+      "name": "訂正・再判断・業務取消・Undoの非混同と履歴・由来整合の合格条件を確定する",
+      "level": "S",
+      "parentId": "L7-M3",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M3-S1、L5-M4、L6-M3",
+      "sourceHash": "4b142a8c0558164a6df36207a627689e132d5684e19a6fb54c0c089981093297",
+      "issueNumber": 158,
+      "generatedHash": "1b058c333dca7464dac1eec18fedc5f828640dccc8bd98d0388997d699865609"
+    },
+    "L7-M3-S4": {
+      "name": "可逆性受入の実施手順・証跡・合否集約規則を確定する",
+      "level": "S",
+      "parentId": "L7-M3",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M3-S2、L7-M3-S3",
+      "sourceHash": "9c17f1b403efb03671c48d0d4e28c5a256b1a742f503abbafed95ef227ef0a5b",
+      "issueNumber": 159,
+      "generatedHash": "e14d12615b8ce7cf3fa6d510c10c0e57005ed73cd7c4cbaaa8fbedd14f2790b5"
+    },
+    "L7-M4": {
+      "name": "永続化・復元・再開の受入基準を確定する",
+      "level": "M",
+      "parentId": "L7",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L1-M4、L4-M5復元整合Gate、L5情報提示整合Gate、L6-M4",
+      "sourceHash": "e21f0a7b1142027515437b2d12d831d75a1e3c25a4ef5b47f4b238aa5c85eb24",
+      "issueNumber": 41,
+      "generatedHash": "fe45e339c532f11dcf442cdd750d902dae7274b7c70d7f5bc1621255130826e2"
+    },
+    "L7-M4-S1": {
+      "name": "復元対象・規模・保持・環境・Session条件を確定する",
+      "level": "S",
+      "parentId": "L7-M4",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L1-M4、L4-M5復元整合Gate",
+      "sourceHash": "260935b47c4a5162adfbc27b81dcd8ab15c59b9d9f3ed2ab462f77b2ad05530e",
+      "issueNumber": 160,
+      "generatedHash": "1b9821dd815aa54afaf5eb20b28297eedd5d355583f3d62c9e8f95d6f18c4886"
+    },
+    "L7-M4-S2": {
+      "name": "正常終了・再起動・復元・通常進行再開の合格条件を確定する",
+      "level": "S",
+      "parentId": "L7-M4",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M4-S1",
+      "sourceHash": "0ce3cf3f54ebe41f806458ddd105e817be8cf601b7aeadea34fe3fd067205e99",
+      "issueNumber": 161,
+      "generatedHash": "0c88810bbc6b83af0f6b85ddbc1dad1d426460ec72a50dea684a84edf31c0e45"
+    },
+    "L7-M4-S3": {
+      "name": "復元後の正本・参照閉包・履歴整合の合格条件を確定する",
+      "level": "S",
+      "parentId": "L7-M4",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M4-S1",
+      "sourceHash": "bbedff59f73efe3aa8c57851bb74bcc279f3ae1beef9362a1eef68cfa4009e0a",
+      "issueNumber": 162,
+      "generatedHash": "4a9610a2b9f2480781306f26016a6c022e01baaf7308e88408dbfc2966c35780"
+    },
+    "L7-M4-S4": {
+      "name": "欠落・不整合時の安全な停止条件を確定する",
+      "level": "S",
+      "parentId": "L7-M4",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M4-S3",
+      "sourceHash": "2bfaa5a82cf4888b5a4bea124d57514610021f6493f389e1d54ba0cd4a8e9c04",
+      "issueNumber": 163,
+      "generatedHash": "e9d547d2d64bf029c1c1da1391bf3b256cc1a674e49efdaf14d1361fd6ba909c"
+    },
+    "L7-M4-S5": {
+      "name": "永続化・復元受入の実施手順・証跡・合否集約規則を確定する",
+      "level": "S",
+      "parentId": "L7-M4",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M4-S2、L7-M4-S4",
+      "sourceHash": "87ecd97fcfb470c6246989b81c97542949831e5b4c4f2fb01ca67bf8b2f85c71",
+      "issueNumber": 164,
+      "generatedHash": "62c4bca26f9cba665ac70a032bc43929788b0f68c8e1d6869714bbf4e15d6cae"
+    },
+    "L7-M5": {
+      "name": "AI非依存性・他AI適合性の受入基準を確定する",
+      "level": "M",
+      "parentId": "L7",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L6-M5、L6連携能力整合Gate",
+      "sourceHash": "406f62bd2ce5b8d1e8828812b32f0eef79a468bcfba08508a819a9dc1e58001f",
+      "issueNumber": 42,
+      "generatedHash": "d483bc204d3562ed8faa10bb4a2051478ca846354e61843707b90a4bd6ebea76"
+    },
+    "L7-M5-S1": {
+      "name": "Capability別の適合・代替・不足プロファイルを確定する",
+      "level": "S",
+      "parentId": "L7-M5",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L6-M5、L6連携能力整合Gate",
+      "sourceHash": "2f17fe549e18815bbc9343ca2e3317d6098eb815ac07835d4f3b7c23a7c7ddfb",
+      "issueNumber": 165,
+      "generatedHash": "6481fa059993b4d24130b815c73f0865e5991dcf6e5f47db26f8b3ad83ef68cf"
+    },
+    "L7-M5-S2": {
+      "name": "更新・照会・通知Capabilityの意味適合条件を確定する",
+      "level": "S",
+      "parentId": "L7-M5",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M5-S1",
+      "sourceHash": "57f54a92853c3f447be07e6f0e2b7f0fddee0984ad8d83bb8875662555a38bc9",
+      "issueNumber": 166,
+      "generatedHash": "c5dace3bd27b3c1bd74641b526d965de42481de18d55b208c130726b974f26e4"
+    },
+    "L7-M5-S3": {
+      "name": "Capability不足・縮退時の禁止事項と明示結果を確定する",
+      "level": "S",
+      "parentId": "L7-M5",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M5-S1",
+      "sourceHash": "145b6c08e15fb4ea2980beed53ede5b0a51ba378d4c8d31b62f8709d4b87f3e8",
+      "issueNumber": 167,
+      "generatedHash": "6f10d4ddac12e3facc26cd1c811a24058606fd5cfd66fa9e2ec5fdc8a6435fce"
+    },
+    "L7-M5-S4": {
+      "name": "AI適合性受入の実施手順・証跡・合否集約規則を確定する",
+      "level": "S",
+      "parentId": "L7-M5",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M5-S2、L7-M5-S3",
+      "sourceHash": "a3361e6d19b98e9e1af359c5fc19ed830e628ed4d8197e8afecb74a9831372e3",
+      "issueNumber": 168,
+      "generatedHash": "5e403a137c033985756ae2cbd4894b107904b2344d1c2762e6ab262cbf5b10bf"
+    },
+    "L7-M6": {
+      "name": "全FR・AR・NFR・MVP・シナリオの受入仕様とTraceabilityを確定する",
+      "level": "M",
+      "parentId": "L7",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L1、L2、L3、L4、L5、L6、L7-M1、L7-M2、L7-M3、L7-M4、L7-M5",
+      "sourceHash": "6e1718db5994d90b7ea783d60e7bd24bd775579d8b23c73cee675c637cd01103",
+      "issueNumber": 43,
+      "generatedHash": "f0e4ef965f1473cc72d74823566a444d5885d87a9c5633e28a0c29e896ce3c8b"
+    },
+    "L7-M6-S1": {
+      "name": "全要件・MVP外境界・Owner台帳を確定する",
+      "level": "S",
+      "parentId": "L7-M6",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M6-S2、L1、L2、L3、L4、L5、L6",
+      "sourceHash": "3ea79be8fa97e7086c66785dd9319600cb07351a3d6b34c7446b7c0addda7a3d",
+      "issueNumber": 169,
+      "generatedHash": "3ef5821c694b53e4e524fe33884bdc7a39f701897603e9538e3d8e474fa8b2c8"
+    },
+    "L7-M6-S2": {
+      "name": "受入仕様の共通行形式・状態・証跡参照規則を確定する",
+      "level": "S",
+      "parentId": "L7-M6",
+      "taskType": "evaluation",
+      "dependency": "着手: 先行可能",
+      "sourceHash": "7fef98553febca0f1be133373eeea13a2fc42c0b432da77b4e066e5c20c4c157",
+      "issueNumber": 170,
+      "generatedHash": "a76ff8d332a057acfe6b97f728b563e2f8a9f207372c087dbb38aa5caba32859"
+    },
+    "L7-M6-S3": {
+      "name": "全要件の受入仕様・Traceability対応表を統合する",
+      "level": "S",
+      "parentId": "L7-M6",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M6-S1、L7-M6-S2、L7-M1、L7-M2、L7-M3、L7-M4、L7-M5",
+      "sourceHash": "da201fe7da7c8154bc3ca527ffa918d4f86b978fc198bcb10dc46cc2b905ac60",
+      "issueNumber": 171,
+      "generatedHash": "f025e205c668497642d669bfed8ba05f92fc9ca5df68f75eeb3f4301ecd86432"
+    },
+    "L7-M6-S4": {
+      "name": "欠落・未対応・非該当・重複・矛盾の監査台帳と解消結果を確定する",
+      "level": "S",
+      "parentId": "L7-M6",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: L7-M6-S3",
+      "sourceHash": "bf30d9066d5c443bac59b04a157f9d4dc4804fdd4f9f1a0e3b015344a1b698f7",
+      "issueNumber": 172,
+      "generatedHash": "4001c665094c37e2f43b42456b2deb483fab8274992e72c2bcdf01a6055748eb"
+    },
+    "L7-M6-S5": {
+      "name": "合否証跡索引・L8受渡し台帳・要件ベースライン入力を確定する",
+      "level": "S",
+      "parentId": "L7-M6",
+      "taskType": "evaluation",
+      "dependency": "完了・Merge: Traceability解消Milestone",
+      "sourceHash": "e0ddf102f27041861d54c8c2b20a8f61c85fcbdfc20821e254d79330cb613671",
+      "issueNumber": 173,
+      "generatedHash": "e93ae0c7cd1c5a72ada50498c432b194e210f0b01262e5903e2ed2ad1dbb5e1e"
+    },
+    "L8": {
+      "name": "実装方式・アーキテクチャを設計する",
+      "level": "L",
+      "parentId": null,
+      "taskType": "tracking",
+      "dependency": "草案: 関連するL4、L5、L6、L7。完了・Merge: 要件ベースライン確定Gate",
+      "sourceHash": "99b5ee24820e6a5d13d85a76ef77619f12609f64cce9d26101443da3aa3fd7fb",
+      "issueNumber": 2,
+      "generatedHash": "39726f3f10929f11e98c9a6bea6c773a2e1d324c7709e4a600ae3aacc2eda4f7"
+    },
+    "L8-M1": {
+      "name": "技術アーキテクチャ・共通技術・ADRを確定する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: 要件ベースライン確定Gate",
+      "sourceHash": "3949c379f9151d0bb5b0b5f8c5da0e78eb2afbbdd7a8eedc4f21bd68d50b4ea3",
+      "issueNumber": 44,
+      "generatedHash": "4fa8b08a48f5375ec2a5c3813795b702221b95b6a0b533b44dc9c5feddd42710"
+    },
+    "L8-M1-S1": {
+      "name": "実行対象・アプリ形態・配置制約／前提を確定する",
+      "level": "S",
+      "parentId": "L8-M1",
+      "taskType": "design",
+      "dependency": "完了・Merge: 要件ベースライン確定Gate",
+      "sourceHash": "41acb651b3eccc61f5ed5d54f90900527ee45bf1dd72fd9b564343ea6149aeab",
+      "issueNumber": 174,
+      "generatedHash": "5c828486830b1132f04d6da405e8068678a2d9a9d711bfb4d3b69b1954683842"
+    },
+    "L8-M1-S2": {
+      "name": "技術Component・Module境界と技術情報流を確定する",
+      "level": "S",
+      "parentId": "L8-M1",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M1-S1",
+      "sourceHash": "81b9824b49d761bbd7e62ab4445dcf84e2b2fc0a01fb965a72d8c448086b4e15",
+      "issueNumber": 175,
+      "generatedHash": "bc755fa6e47ff728cbb88d3cb94c0836459611dfece0590bde8bfd3f758b964a"
+    },
+    "L8-M1-S3": {
+      "name": "共通Runtime・技術選定とProcess／Host配置を確定する",
+      "level": "S",
+      "parentId": "L8-M1",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M1-S2",
+      "sourceHash": "8d5ef1be0bfb577ff2adb83111e3adbc12fca98de98dec7f679ecf147e292e03",
+      "issueNumber": 176,
+      "generatedHash": "89a163310ac8066289a2fa8fc8870439ee48d4c90a8f1e9574df2977bd97eb06"
+    },
+    "L8-M1-S4": {
+      "name": "Architecture ADR・未決定事項・後続受渡し台帳を確定する",
+      "level": "S",
+      "parentId": "L8-M1",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M1-S3",
+      "sourceHash": "46d2fb2ad1d193e52ed983f6ae54918f0869b42880481f2f7a457fc973d1bd93",
+      "issueNumber": 177,
+      "generatedHash": "11332d16b0264aee2641c7968f4b7444ce3752701fb1638903ed18d7977faef8"
+    },
+    "L8-M2": {
+      "name": "議論マップ・会話・全体／フォーカスの具体UIを設計する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L8-M1、L5、L6、L7-M1、L7-M2、L7-M3、L7-M4",
+      "sourceHash": "c2ffc0171ededf4e9989c5ccab6eb54fbc57319c3489efbae5e9452a57f41bcd",
+      "issueNumber": 45,
+      "generatedHash": "f9bda408ba0d0f98aad15b5b15b7713cc5cee5e28e915d48e2e43e2b26a2d8ec"
+    },
+    "L8-M2-S1": {
+      "name": "画面・情報ArchitectureとUI Component境界を設計する",
+      "level": "S",
+      "parentId": "L8-M2",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M1 Architecture基盤Gate、L5、L6",
+      "sourceHash": "d5701b8d121237cd4778e770ddeb2d3b6decb35884eb19e4ea89b3bd1613c57f",
+      "issueNumber": 178,
+      "generatedHash": "4b9ebf5842d1f1b516d2d593f183c15e6bc00bd26e7f5f6eeb957f1ae30fc06f"
+    },
+    "L8-M2-S2": {
+      "name": "MVP議論マップ表現と全体／フォーカス情報配置を設計する",
+      "level": "S",
+      "parentId": "L8-M2",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M2-S1、L5-M1、L5-M5、L7-M1",
+      "sourceHash": "30867a87429b34e4cbb7e66a48a9134fbc9f831fcf1417d859825f32bab33db3",
+      "issueNumber": 179,
+      "generatedHash": "3826a971c7eeafd594df63d5ff4af07318325d72b94b52c3c552c9ac170a011c"
+    },
+    "L8-M2-S3": {
+      "name": "Navigation・選択・全体／フォーカス切替と文脈継続Interactionを設計する",
+      "level": "S",
+      "parentId": "L8-M2",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M2-S2",
+      "sourceHash": "081824101cd946bd5eb85471620a88bac4b8f4ddf816a9340f94b778f5d052d9",
+      "issueNumber": 180,
+      "generatedHash": "c719b008d0c7197a8cc046c5849b42acad100935a6c182a56b2c867da5359291"
+    },
+    "L8-M2-S4": {
+      "name": "会話入力・議論更新・判断操作のInteractionを設計する",
+      "level": "S",
+      "parentId": "L8-M2",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M2-S1、L1、L2、L3、L6-M2",
+      "sourceHash": "7c53d654987a45cbe65487e4a9012b0b996db33e5ec5fce885c1fdb40258dfc3",
+      "issueNumber": 181,
+      "generatedHash": "50a9c1d3816102fa9b7a7ad148e9e58e0ca8d2f14dbc6e5917051f07895e99d9"
+    },
+    "L8-M2-S5": {
+      "name": "状態・決定・提案・履歴・スコープのVisual Languageを設計する",
+      "level": "S",
+      "parentId": "L8-M2",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M2-S1、L2、L3、L4、L5",
+      "sourceHash": "f4deeefb9b083c662b1671b5c09504896b488156039efea8efb7379eb810b6ba",
+      "issueNumber": 182,
+      "generatedHash": "0ed6a7aa6e8bdf8dc6250641437eb9276870f57c3277a7fa86f25ddf14bcc122"
+    },
+    "L8-M2-S6": {
+      "name": "待機・拒否・Guard・競合・復元異常等のUI状態を設計する",
+      "level": "S",
+      "parentId": "L8-M2",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M2-S3、L8-M2-S4、L8-M2-S5、L6-M4、L7-M2、L7-M3、L7-M4",
+      "sourceHash": "ee4f0f5e3486016287496ea26ddb280daeeeabe27b81608b856529556629d31b",
+      "issueNumber": 183,
+      "generatedHash": "4d416d7125eb3927b1b298a63fdabac54e433f16ea6552791bc25f19bee3e95e"
+    },
+    "L8-M2-S7": {
+      "name": "Responsive・Accessibility・表示性能制約を設計する",
+      "level": "S",
+      "parentId": "L8-M2",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M2-S2、L8-M2-S3、L8-M2-S4、L8-M2-S5、L8-M2-S6、L7-M1、L7-M2",
+      "sourceHash": "0dbf9f148e2e90f7eaf2b42a2d6af01ca801362e7470b81c7b6842876f6f1a33",
+      "issueNumber": 184,
+      "generatedHash": "035efa94237734fc0b194eb05b19439acc992efbd56072fb437a08ad30e90445"
+    },
+    "L8-M3": {
+      "name": "Discussion Tool／API・Schema・Error契約を設計する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L8-M1、L2、L3、L4、L5、L6、L7",
+      "sourceHash": "8bf1d875f29383cdd2f78a0bd09a8cd583a40d6e395085cd5c3422790ad83b50",
+      "issueNumber": 46,
+      "generatedHash": "091156906e091d989739288f378f03c12b7988b48da0ce262e63c02b7aeed24f"
+    },
+    "L8-M3-S1": {
+      "name": "AI Tool・UI／Application API SurfaceとOperation Catalogを確定する",
+      "level": "S",
+      "parentId": "L8-M3",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M1 Architecture基盤Gate、L6",
+      "sourceHash": "8b0907e055c31d6f73228da19f9bd6aea06e18b1d768b638eeaa81c656247205",
+      "issueNumber": 185,
+      "generatedHash": "8efd3eeca497c56313fb4b5da7f13d60b6e02905b88e7893a9c777e5211606e7"
+    },
+    "L8-M3-S2": {
+      "name": "共通Wire JSON Schema・DTO・識別子規約を確定する",
+      "level": "S",
+      "parentId": "L8-M3",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M3-S1",
+      "sourceHash": "236cb4b71e913f0ee7ae3c91b35c756149247b68781e75e3ca26ed663499ed7c",
+      "issueNumber": 186,
+      "generatedHash": "a075e1777a17fe8eeddfa0f9cddc57ade6983a06dc81e9d4b80e54e447176840"
+    },
+    "L8-M3-S3": {
+      "name": "更新Command・ChangeSet要求／結果契約を設計する",
+      "level": "S",
+      "parentId": "L8-M3",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M3-S2、L8-M3-S6",
+      "sourceHash": "c8cc100298e88d7026682b945fd5f73f715af8aee5bd3fbc749f536d7405d7f2",
+      "issueNumber": 187,
+      "generatedHash": "b72e27c74e9002921766ebb1e68070bb49ad09551c779b715b477b60779b0929"
+    },
+    "L8-M3-S4": {
+      "name": "Query・Projection・転送Snapshot契約を設計する",
+      "level": "S",
+      "parentId": "L8-M3",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M3-S2、L8-M3-S6",
+      "sourceHash": "3f3b5105a887b12e9b2b4b2e064bef78bf1e03fd64226b74727ec7f651cbfd54",
+      "issueNumber": 188,
+      "generatedHash": "1e6ebb4bbf144d4d0c86d235c80d7723493eb157d99dc41fcd1599002b078b9e"
+    },
+    "L8-M3-S5": {
+      "name": "変更・処理結果通知と相関契約を設計する",
+      "level": "S",
+      "parentId": "L8-M3",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M3-S3、L8-M3-S4",
+      "sourceHash": "cf8e81b73c55da1c48968acc737ed18929ca45451c4614757caebfcf156a8344",
+      "issueNumber": 189,
+      "generatedHash": "00c722e5f4ae88e511c18adc9823fa08ccedc7e85139ec1ea101806c469c26ba"
+    },
+    "L8-M3-S6": {
+      "name": "Result・Failure・Error契約を設計する",
+      "level": "S",
+      "parentId": "L8-M3",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M3-S2",
+      "sourceHash": "01ecd4dc0e959234a247940b5892a84c6433ac8db157f7c84a0d39e438619c20",
+      "issueNumber": 190,
+      "generatedHash": "83903fd0943ff5e1a70ec3c26efb9f0de2c5fad4e93b851fb59450e84921606c"
+    },
+    "L8-M3-S7": {
+      "name": "API／Schema Version・互換性・契約公開／Validationを確定する",
+      "level": "S",
+      "parentId": "L8-M3",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M3-S3、L8-M3-S4、L8-M3-S5、L8-M3-S6",
+      "sourceHash": "dbe23ba3ca8e5a63656eb4e8e4a820911b3c01f3cd97ce4f54c3e150f3821d7a",
+      "issueNumber": 191,
+      "generatedHash": "e9d1ba483e8f6663e5f95688d6d6c1a1e6f6c1833818de4de36f035758a53e15"
+    },
+    "L8-M4": {
+      "name": "AI会話生成・解釈・判定支援方式を設計する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L8-M3 API契約整合Gate、L8-M1、L2、L3、L4、L6",
+      "sourceHash": "572fcfb8bed8bdfa1f8bbc54963334d13b8cee6481134e423c155562e4d31419",
+      "issueNumber": 47,
+      "generatedHash": "c8453869d9007326ae6dd9f0b9b8f5051190c6b036b6c5e1c188ae8f3c3e8f49"
+    },
+    "L8-M4-S1": {
+      "name": "Model要件・Prompt・Context Assembly・AI設定Version方針を設計する",
+      "level": "S",
+      "parentId": "L8-M4",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M1 Architecture基盤Gate、L2、L3、L4、L5、L6",
+      "sourceHash": "58f53549d777204a4b3bc330b0946380b8df255525c26ee45fbe2323e8359466",
+      "issueNumber": 192,
+      "generatedHash": "a1cec1435c5d50f562385a83576c1c67d4f69a3584745dd190725ea34261c199"
+    },
+    "L8-M4-S2": {
+      "name": "初期論点構造・完了条件・一問一答質問の生成方式を設計する",
+      "level": "S",
+      "parentId": "L8-M4",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M4-S1",
+      "sourceHash": "d8f85d94f1f2295a2185c21a921f783ff60128b469ee583268d326937f06f5d6",
+      "issueNumber": 193,
+      "generatedHash": "ff1203b37483eae3e725affb75544d85bfa1cbbbea9b98dea7d5aed8258c3418"
+    },
+    "L8-M4-S3": {
+      "name": "発言意図・曖昧性・訂正・理解停止Signalの解釈方式を設計する",
+      "level": "S",
+      "parentId": "L8-M4",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M4-S1",
+      "sourceHash": "dcd84d2c1f7da0c67cad3bd76fd3fd7b0b083ddebacb29c94e29ec6bc717ef42",
+      "issueNumber": 194,
+      "generatedHash": "0c56142ce168017071d5427918e266aff1223b0b56e07f65c8dde637644427a2"
+    },
+    "L8-M4-S4": {
+      "name": "提案候補・進行・完了可能性・次行動候補の判定支援方式を設計する",
+      "level": "S",
+      "parentId": "L8-M4",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M4-S2、L8-M4-S3、L8-M4-S5",
+      "sourceHash": "949e030b6094bf4f5aec4ddf96277502dc4b92eb595ec1bfecc133d5876a44f5",
+      "issueNumber": 195,
+      "generatedHash": "a8b9f97457bcf1d695cd9ab61908a96b9f083d3130055865d8449a749ce9c739"
+    },
+    "L8-M4-S5": {
+      "name": "背景再説明・履歴／根拠検索・Grounding忠実性を設計する",
+      "level": "S",
+      "parentId": "L8-M4",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M4-S1、L4、L6-M3",
+      "sourceHash": "b9fd72cbb3642dc9a44355bf9e51b83d9ed4078b8cb4f7cd1b8a47c042ef4913",
+      "issueNumber": 196,
+      "generatedHash": "804c2bba4ca2947e054647634055c12aa4933fc69094f1ca7e7545f2f3bbf24c"
+    },
+    "L8-M4-S6": {
+      "name": "構造化AI出力・Tool Call候補／実行前Planを設計する",
+      "level": "S",
+      "parentId": "L8-M4",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M4-S4、L8-M4-S5、L8-M3 API契約整合Gate",
+      "sourceHash": "62b1d2024cd01981c2096064056fd0527fa97cc493828c413f03dd4a7667833e",
+      "issueNumber": 197,
+      "generatedHash": "93474a02b74098a6bcc872dfef4abeba9432fcfedc4a0532181e461e2ea12da2"
+    },
+    "L8-M4-S7": {
+      "name": "AI出力品質制御・不確実性表現・非更新Fallback方針を設計する",
+      "level": "S",
+      "parentId": "L8-M4",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M4-S4、L8-M4-S6",
+      "sourceHash": "335580cdd89f734231ed85418cb113b868bfa3587da011f226f916888fd3dd02",
+      "issueNumber": 198,
+      "generatedHash": "df2fbf6ff23d31bb79265edc3b769bd5312fd87ec51179fd62fee9244ae6f028"
+    },
+    "L8-M5": {
+      "name": "Codex初期接続・Provider Adapter・接続方式を設計する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L8-M3、L8-M4",
+      "sourceHash": "572875fe64052365a04d6f7e47c9a13231fec2731a126eb63b0cb8e481c879f2",
+      "issueNumber": 48,
+      "generatedHash": "c11655008d9b899a707f5ad578a27d839172e134a37ebee444dfcb029868aa8d"
+    },
+    "L8-M5-S1": {
+      "name": "Provider-neutral Adapter境界・Capability表明／適合判定方式を設計する",
+      "level": "S",
+      "parentId": "L8-M5",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M3 API契約整合Gate、L8-M4 AI方式整合Gate",
+      "sourceHash": "704f6ee5fac3582135027db5f28828b38582b07f54bf6d2b26697509a2ff2ab9",
+      "issueNumber": 199,
+      "generatedHash": "7873cbe33387fef530723d01acc747622b79a52302e7aca9d253ef34a4931bc3"
+    },
+    "L8-M5-S2": {
+      "name": "Codex初期Model割当・Tool登録・会話／Tool Loopを設計する",
+      "level": "S",
+      "parentId": "L8-M5",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M5-S1",
+      "sourceHash": "04cc77acfbe7dd19ec8ab4f149f1b4055f13d08bdcdd6d243e07e29d9b3ccd4f",
+      "issueNumber": 200,
+      "generatedHash": "2da0029fa882fc1d2dab077c2014e3f02eb693850c08baabd2cb79b660a47e1a"
+    },
+    "L8-M5-S3": {
+      "name": "接続Transport・Protocol・SDK・認証境界・Process Lifecycleを設計する",
+      "level": "S",
+      "parentId": "L8-M5",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M5-S2、L8-M1",
+      "sourceHash": "2097c81b2fc5cbdf354665eecefa9dc0c1402723f5f831a130d4f0e18f81dfcf",
+      "issueNumber": 201,
+      "generatedHash": "def22112791b6df0db24d93c6429ebabdffa9a959b90cb1289f71246a821fa55"
+    },
+    "L8-M5-S4": {
+      "name": "Provider結果・Error・Timeout／Cancel／Rate Limitの共通契約写像を設計する",
+      "level": "S",
+      "parentId": "L8-M5",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M5-S2、L8-M5-S3",
+      "sourceHash": "20e975c27581e00d5fddaa09e417d51d3785c6a5bbd6cc3948e277715d193303",
+      "issueNumber": 202,
+      "generatedHash": "fb0c8fbfb9c696e2a2faa0da8c8ad2917a7f3829ae090a1b484af29105b530c6"
+    },
+    "L8-M5-S5": {
+      "name": "Capability適合・不足時の接続拒否／明示縮退と他AI Adapter適用方針を設計する",
+      "level": "S",
+      "parentId": "L8-M5",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M5-S2、L6-M5、L7-M5",
+      "sourceHash": "cfdab6b9c3ad5ff7f18cf77744a05b2bc0d7e854ad78bb28c8b9c8952054f50a",
+      "issueNumber": 203,
+      "generatedHash": "7726e1f9836c468dd8539321b8fd9edc0a7f280a9f2c3ddd416d6143a0a225fa"
+    },
+    "L8-M6": {
+      "name": "物理データモデル・永続化・履歴・Undo・復元方式を設計する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L8-M1、L4、L7-M3、L7-M4、L8-M3 API契約整合Gate、L8-M5-S3",
+      "sourceHash": "ba1a1b669c8cc770534e0465493caa1b96236c77379b413d46764d12b3323ae7",
+      "issueNumber": 49,
+      "generatedHash": "9ee4912cd1e0538c7c09a377f4981382b71eb457f0508e6423000eb8b7a9c48c"
+    },
+    "L8-M6-S1": {
+      "name": "論理Entity→物理表現・ID／型・正本／導出Projection境界を設計する",
+      "level": "S",
+      "parentId": "L8-M6",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M1 Architecture基盤Gate、L4",
+      "sourceHash": "8d7292bb5f4919ab9a91a9e386568f7df0c2764960636dd72f59e84c7eb66100",
+      "issueNumber": 204,
+      "generatedHash": "47b4b961375ad2bfb73c25b93b44a7dbc1ff04abcf3a2e9b09b2b2371dc1b74d"
+    },
+    "L8-M6-S2": {
+      "name": "Session・会話・論点・文脈・状態・判断結果の物理Schemaを設計する",
+      "level": "S",
+      "parentId": "L8-M6",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M6-S1",
+      "sourceHash": "d479d56ed9e7df0a5d7983da18af5ef04392168177b1673100448e70445a0a21",
+      "issueNumber": 205,
+      "generatedHash": "b54d0136e63521322dc1e929e7dd29d3dce1a99f9a40f50c84e3526ed912d576"
+    },
+    "L8-M6-S3": {
+      "name": "Change Event・ChangeSet・履歴・議論由来の物理Schemaを設計する",
+      "level": "S",
+      "parentId": "L8-M6",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M6-S2",
+      "sourceHash": "61b8148e1af8841d613a2090a6d6542379e6efc474f7197efe15b24c10da4e85",
+      "issueNumber": 206,
+      "generatedHash": "4d2ed5cd8a0b9e2095085ddc915184d372ff00586b56e60cc507c53620611bd2"
+    },
+    "L8-M6-S4": {
+      "name": "Undo対象・依存閉包・逆変更計画の物理表現を設計する",
+      "level": "S",
+      "parentId": "L8-M6",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M6-S3",
+      "sourceHash": "027e2c7a509f9ad31273389d67ce2738d761bcc6164b0d0df12fe0fa316b469b",
+      "issueNumber": 207,
+      "generatedHash": "717c7adb28743a3a1626b93cc3e543ccc14a5b644755bd83b776aba7664933bb"
+    },
+    "L8-M6-S5": {
+      "name": "Query Access Path・物理制約・Index／Materialized Projectionを設計する",
+      "level": "S",
+      "parentId": "L8-M6",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M6-S3、L8-M3 API契約整合Gate",
+      "sourceHash": "461f9063bb83485007253895b728b0a961315d1c98ed0a36c5579cb1ae020b3d",
+      "issueNumber": 208,
+      "generatedHash": "af66c385c01d5084b4f1e4a72d22ae91f967ae523ab3756df06b6d9da67ab77e"
+    },
+    "L8-M6-S6": {
+      "name": "保存Snapshot／Checkpoint・再構築／Replay・Session復元閉包を設計する",
+      "level": "S",
+      "parentId": "L8-M6",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M6-S4、L8-M6-S5",
+      "sourceHash": "d6cf20d0a951a622c8307fcdb7350e5ad65e9925d2b148bcc0ff08807f6bfaaa",
+      "issueNumber": 209,
+      "generatedHash": "49b2851123d1f5c4d49792ca4a5e532fda21031e0244c294fca21c4fd684b189"
+    },
+    "L8-M6-S7": {
+      "name": "Schema Version・Migration・Retention／Backup採否・Secret保護境界を設計する",
+      "level": "S",
+      "parentId": "L8-M6",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M6-S6、L8-M5-S3",
+      "sourceHash": "924a769020def8c33d84aed628adf51893f99d62756787a3e8b0a77f27d7ecda",
+      "issueNumber": 210,
+      "generatedHash": "8355aad9644b0f261ead01ba2dab731736ce5749d8ae48dd606ae56820e8c8f5"
+    },
+    "L8-M7": {
+      "name": "処理オーケストレーション・同期・競合・冪等・障害復旧を設計する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L8-M2、L8-M3、L8-M5、L8-M6",
+      "sourceHash": "333bc0174a11d1372a5fc3ade4e8b696b26e299229d0d3345b526363145ca6c9",
+      "issueNumber": 50,
+      "generatedHash": "fc5b0f94745a28471b87ccba26eca4c6391f79b3f6674ff460a08264a384b12e"
+    },
+    "L8-M7-S1": {
+      "name": "正常Command／Query Sequence・正本確定点・観測同期点を設計する",
+      "level": "S",
+      "parentId": "L8-M7",
+      "taskType": "design",
+      "dependency": "完了・Merge: 具体UI設計整合Gate、L8-M3 API契約整合Gate、Provider接続設計Gate、永続化設計整合Gate",
+      "sourceHash": "076c3645387d2869505aa5667b15db9f6cf1f205fdf6681ab2aa6d54d42698ea",
+      "issueNumber": 211,
+      "generatedHash": "95b3432d872490aa39727777db06261985c94684fc79b951302f39c167cbedf8"
+    },
+    "L8-M7-S2": {
+      "name": "ChangeSet／Undoの原子適用境界・Transaction方式を設計する",
+      "level": "S",
+      "parentId": "L8-M7",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M7-S1",
+      "sourceHash": "ea71b051177a8101ebd0316f83ea29d4cce935bdb8e666e0f8ed7454345d353e",
+      "issueNumber": 212,
+      "generatedHash": "cd041419498ac3044de7ba071ae56340ea7d23570a5ce039d25efb14876edb9e"
+    },
+    "L8-M7-S3": {
+      "name": "expectedVersion・競合検出・Isolation／Lock方式を設計する",
+      "level": "S",
+      "parentId": "L8-M7",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M7-S2",
+      "sourceHash": "f25b6b44d7c3cd753aa071d5eee0a233295ffa0392e6cd87cb1b7cdf214fb1e2",
+      "issueNumber": 213,
+      "generatedHash": "31130513e1f016d96d030556a82b76cf6748f95bd0a27390e7bc65bc6cc6caec"
+    },
+    "L8-M7-S4": {
+      "name": "Idempotency Key生成・保持・重複抑止・安全なRetry／Timeout／Cancel方式を設計する",
+      "level": "S",
+      "parentId": "L8-M7",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M7-S5",
+      "sourceHash": "289816c3803fda4aed8b96a3e56c0d259325c6cf1a0b3e9ef5e800ebec710d25",
+      "issueNumber": 214,
+      "generatedHash": "3d8465f2894c254b356266c1dbf6708ade8fe06b20e347555e955cd5cf26470c"
+    },
+    "L8-M7-S5": {
+      "name": "コンポーネント間部分到達・結果不明確認・補償判断を設計する",
+      "level": "S",
+      "parentId": "L8-M7",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M7-S3",
+      "sourceHash": "e1219fd8c764e2bd79ee7ce2709613d2d6694ab51a22a20a39c4f1b3a2c034db",
+      "issueNumber": 215,
+      "generatedHash": "2fab20f655cf5e228848fd4f0fbe7f16e57f3196a5518a7493d8942c64efde89"
+    },
+    "L8-M7-S6": {
+      "name": "確定通知・AI Context／UI Projection同期・再取得方式を設計する",
+      "level": "S",
+      "parentId": "L8-M7",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M7-S4",
+      "sourceHash": "b383de42af2cbe983414a54aa29990617347955158dcbd8df8268ef44e3b843c",
+      "issueNumber": 216,
+      "generatedHash": "ca78a74cc0482f2376d0ac3806a5cb6d6124009bafac26055a1e44d46f541ccb"
+    },
+    "L8-M7-S7": {
+      "name": "切断・再接続・復元異常後の再同期・Session単位Safe Stopを設計する",
+      "level": "S",
+      "parentId": "L8-M7",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M7-S6",
+      "sourceHash": "a4cd4be5691da3316f93cd9907f8780b0ddbf6683e5ba7a7608ef88ef522d3c7",
+      "issueNumber": 217,
+      "generatedHash": "441361d95a8dcea971294a612f9856bd842830645e2a006b52a737444f9b8cfe"
+    },
+    "L8-M8": {
+      "name": "計測・受入試験・証跡収集の実装設計を確定する",
+      "level": "M",
+      "parentId": "L8",
+      "taskType": "tracking",
+      "dependency": "完了・Merge: L7-M1、L7-M2、L7-M3、L7-M4、L7-M5、L7-M6、L8-M2、L8-M3、L8-M4、L8-M5、L8-M6、L8-M7",
+      "sourceHash": "7e2db39ae1c7247aa5849b47f0e1b1e6723afe75de05340398beaf5adb78c44b",
+      "issueNumber": 51,
+      "generatedHash": "1ccd65c776f29c076dfb6700b118f8f5fbb968d21fbc8ec0dcee2feed737512c"
+    },
+    "L8-M8-S1": {
+      "name": "計測観測点・Clock・Trace／Metric／Log相関契約を設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L7、L8-M2、L8-M3、L8-M4、L8-M5、L8-M6、L8-M7",
+      "sourceHash": "828c463c6e2c2d689e670fb04070e265d0b609d91f7c4a9bc1977c30fc84ae3f",
+      "issueNumber": 218,
+      "generatedHash": "cc04731a89ffb27ab283c62630d5a7909295ca48b4ffae7bb11e07874275d33f"
+    },
+    "L8-M8-S2": {
+      "name": "試験Level・実行環境・Tool／実施主体の構成を設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S1",
+      "sourceHash": "9644310cd96d6b884c4ed3e9cc9c328da929ea96deebc826b256ee871c2b833c",
+      "issueNumber": 219,
+      "generatedHash": "8b5ad9c18a8bdcc60f157d9f6d1f4e3d21ce6ed623e486bdfe70a6eb2205a04b"
+    },
+    "L8-M8-S3": {
+      "name": "Fixture・Dataset・Oracle・Fault Injection仕様を設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S2",
+      "sourceHash": "5a415f1f700ef4df623b6797514cacc5d07b35ebd60d3030ff0ab1f3c60bd681",
+      "issueNumber": 220,
+      "generatedHash": "7f74d3e19a8b1f75ac56366d28d651e0b6336bed69349b8f8234a8837ae414de"
+    },
+    "L8-M8-S4": {
+      "name": "Undo・復元・競合／冪等・同期・障害経路Harnessを設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S3、L8-M7",
+      "sourceHash": "e86773ef514319ad47e7d0e4912a1a26064e877231aa24db592f4a36e4b1d7de",
+      "issueNumber": 221,
+      "generatedHash": "c0a5331131fe5017c518c07347e97424248d9d282d973092c930134e5bedefa6"
+    },
+    "L8-M8-S5": {
+      "name": "ユーザビリティ・可読性評価Harnessを設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S3、L7-M1、L8-M2",
+      "sourceHash": "68263ed2e5598cd41039648082cd74ed506ac61e007739798cd4fe82d8745d04",
+      "issueNumber": 222,
+      "generatedHash": "ca01270d95403f251ed84e2b6f9c0b01bce6a7e52ce4a3776c5bd3056adc727a"
+    },
+    "L8-M8-S6": {
+      "name": "応答性・同期性能計測／負荷Harnessを設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S3、L7-M2、L8-M7",
+      "sourceHash": "905ea22704a785d53dded95edf72d860b10aae351026f3f6283aa2e2469b415d",
+      "issueNumber": 223,
+      "generatedHash": "ab688b94e9591ef037114785944bce7abfbe2828539610a35ba8219e1504de76"
+    },
+    "L8-M8-S7": {
+      "name": "AI生成品質・Capability適合Harnessを設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S3、L7-M5、L8-M4、L8-M5",
+      "sourceHash": "24584d1b38a2ebc2a292ccfe22cbac134b8806fe53b14de0cfab610ababe074a",
+      "issueNumber": 224,
+      "generatedHash": "f9a00a6839e2060f826f94b3e1557c64349848cad5b846177e53fd818f564ba7"
+    },
+    "L8-M8-S8": {
+      "name": "試験実行順・再現性・隔離・実施状態管理を設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S4、L8-M8-S5、L8-M8-S6、L8-M8-S7",
+      "sourceHash": "f78bbab7f1106f99adb69b43501f49dd735c3d432a7b108d7b296f3faf1a5d30",
+      "issueNumber": 225,
+      "generatedHash": "9014128e85feafa6c7eb59d175e87d097a220464a8eebb2990d22e372e34262c"
+    },
+    "L8-M8-S9": {
+      "name": "証跡収集・保存・Traceability連結・L7合否集約の実装方式を設計する",
+      "level": "S",
+      "parentId": "L8-M8",
+      "taskType": "design",
+      "dependency": "完了・Merge: L8-M8-S8",
+      "sourceHash": "9fe23c10236dcc5a32be8ae2f1ebf52c4fb702ca7c8c865dac02fe1aab6d936e",
+      "issueNumber": 226,
+      "generatedHash": "f4d48885f01a4402563ebf66ab39e4bc3bddfe01e3f3bef0be35083ffa816061"
+    }
+  }
+}
