@@ -11,21 +11,24 @@ Task Issueを1つのブランチ、worktree、VS Codeウィンドウ、Codexセ�
 
 1. 変更操作の前に[ライフサイクル](references/lifecycle.md)を全文読む。
 2. Primary checkoutから `plan` を実行し、Issue、依存Task、Gate、基準ref、Path競合を確認する。
-3. 作成内容と外部操作をユーザーへ示し、必要な承認を得てから `start` を実行する。
+3. `plan` が合格したら `start` を実行する。ユーザーが実装を依頼済みの場合、worktree作成やVS Code起動について追加承認を求めない。
 4. VS Codeが開いたら、ユーザーへCodexの開始と引継ぎファイルの読込みを依頼する。
 5. 作業完了時は `finish` とIssue固有の検証を実行する。
 6. 作業主担当とは別の相互に独立した2名の読み取り専用サブエージェントで独立完了監査を行い、原典、現Issue終了条件、親・兄弟・後続Issue、未解決TBDを実差分・検証結果と照合する。
 7. 監査指摘を整理し、必要な修正とIssue固有の再検証を行う。初回監査の2名とは別の読み取り専用サブエージェントで全項目を再確認し、残る指摘も監査結果へ記録する。
 8. 変更内容、検証結果、独立監査結果をユーザーへ提示する。
-9. `git add`、Commit、push、PR作成は、対象操作についてユーザーの明示承認を得た後に限り実行し、IssueへEvidenceを残す。
+9. `git add`、Commit、push、PR作成は、対象操作についてユーザーの明示承認を得た後に限り実行する。Commit時は`.agents/skills/commit/SKILL.md`、PR作成時は`.agents/skills/pr/SKILL.md`を全文読み、そのSkillを使って実行し、IssueへEvidenceを残す。
 10. Merge後に限り、明示承認を得て `remove` を実行する。
 
-GitHub Issue、ネットワーク、GUI、push、PR、削除を伴う操作では、それぞれ既存の承認規則に従う。
+`start` はworktree作成とVS Code起動を一連の開始操作として扱う。実行環境が要求する権限確認を除き、Skill独自の承認Gateを設けない。GitHub Issue更新、push、PR、削除を伴う操作では、それぞれ既存の承認規則に従う。
 
 ## Commit・PR承認Gate
 
 - `finish`、Task固有の検証、独立完了監査、必要な修正・再検証、独立再確認を行い、変更Path、差分概要、検証結果、監査結果、予定するCommitメッセージとPR概要をユーザーへ提示する。
 - ユーザーが対象操作を明示承認するまで、`git add`、`git commit`、`git push`、PR作成を実行しない。
+- Commitの承認後、`git add`または`git commit`を実行する前に`.agents/skills/commit/SKILL.md`を全文読み、Commit Skillの規則と手順に従う。
+- PR作成の承認後、PRを作成する前に`.agents/skills/pr/SKILL.md`を全文読み、PR Skillの規則と手順に従う。
+- Commit SkillとPR Skillの利用は本節の明示承認Gateを代替しない。
 - 「続けて」「対応して」「完了まで進めて」などの一般的な作業継続指示を、Commit・push・PR作成の承認とみなさない。
 - Commitだけの承認をpushやPR作成の承認へ拡張しない。複数操作をまとめて実行する場合は、承認対象にCommit・push・PR作成が明記されていることを確認する。
 - 承認前は成果物と検証結果をworktreeへ保持し、Commit・PR待ちであることを報告する。

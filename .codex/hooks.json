@@ -1,15 +1,5 @@
 {
     "hooks": {
-        "PermissionRequest": [
-            {
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "terminal-notifier -title \"codex\" -subtitle \"質問\" -message \"ユーザーに質問があります\" -sender \"com.apple.Terminal\" -sound \"Finished\""
-                    }
-                ]
-            }
-        ],
         "Stop": [
             {
                 "hooks": [
